@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Start Header -->
-    <div class="header">
+    <div class="header" id="header">
       <div class="toolbar">
         <div class="container">
           <div
@@ -47,7 +47,9 @@
                   <li><a class="lang-ar" href="#">العربية</a></li>
                 </ul>
               </div>
-              <div class="toolbar-social d-flex align-items-center gap-4">
+              <div
+                class="toolbar-social d-flex align-items-center gap-lg-4 gap-3"
+              >
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -57,21 +59,46 @@
           </div>
         </div>
       </div>
-      <div class="fixed-header-wraper">
+      <div class="sticky-header fixed-header-wraper">
         <div class="container">
           <div
-            class="header-nav-wraper d-flex align-items-center justify-content-between pt-2 pb-2"
+            class="header-nav-wraper d-flex align-items-center justify-content-between gap-3 pt-2 pb-2"
           >
-            <a href="#"><img src="images/Ai EN.png" alt="" /></a>
-            <ul class="nav main-nav gap-4">
+            <a class="logo" href="#"><img src="images/Ai EN.png" alt="" /></a>
+            <ul class="nav main-nav gap-lg-4 gap-md-2">
               <li class="nav-item">
                 <a class="nav-link active" id="home" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="about" href="#">About Dr</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item button-services" id="button-services">
                 <a class="nav-link" id="services" href="#">Services</a>
+                <ul class="dropdown-services" id="dropdown-services">
+                  <li class="nav-item">
+                    <a class="nav-link" id="#" href="#"
+                      >Back pain And Sciatica</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="#" href="#">Biopsycosocial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="#" href="#">Shoulder pain </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="#" href="#">Fibromyalgia </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="#" href="#">Chronic pain </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="#" href="#">Knee pain</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="#" href="#">Hip pain</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="testimonials" href="#">Testimonials</a>
@@ -93,10 +120,62 @@
                 Appointment
               </a>
             </ul>
+            <button class="nav-box" id="nav-box">
+              <i class="fa-solid fa-bars nav-button"></i>
+            </button>
+            <div class="overlay"></div>
+            <button class="close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <section class="home-header">
+      <div class="container">
+        <div class="">
+          <div class="swiper-slide">
+            <div class="custom-container">
+              <div class="home-header-row row">
+                <div class="col-xl-6 pb-5">
+                  <div class="home-header-desc">
+                    <h6 class="home-header-title">We hope you are well</h6>
+                    <h2 class="home-header-sub-title pt-2 pb-2">
+                      <span id="type-1"></span>
+                    </h2>
+                    <p class="home-header-parg">
+                      Dr. Alkholany adopts a holistic approach when looking
+                      after Chronic Pain conditions aiming at improving the
+                      quality of life and regaining the functionality of his
+                      patients. Within that approach, he applies interventional
+                      procedures and pharmacologic management as indicated hand
+                      in hand with the help of physiotherapy and Pain psychology
+                      whenever indicated to achieve optimum outcomes for his
+                      patients and help them to regain the quality of life they
+                      are aspiring to. He also adopts trauma-informed care to
+                      his patients whenever there is an element of psychologic
+                      trauma as part of their Chronic Pain disorder
+                    </p>
+                    <button type="button" class="btn" id="about-us">
+                      About us
+                    </button>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="home-header-image-wrapper">
+                    <img
+                      src="images/Mask Group 239.jpg"
+                      alt=""
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- End Header -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
