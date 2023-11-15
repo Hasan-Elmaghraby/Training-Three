@@ -955,7 +955,7 @@
                   href="#collapse-3"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="collapseExample"
+                  aria-controls=""
                 >
                   <h3 class="faq-card-title">3. Who is a Pain physician?</h3>
                   <div class="collapse" id="collapse-3">
@@ -984,10 +984,10 @@
     </section>
     <!-- End home-faq -->
     <!-- Start Footer -->
-    <footer class="doc-footer">
+    <footer class="doc-footer position-relative">
       <div class="footer-content">
         <div class="container">
-          <div class="row">
+          <div class="row position-relative">
             <div class="col-lg-6">
               <div class="row">
                 <div class="col-lg-8">
@@ -1031,27 +1031,139 @@
                 </div>
                 <div class="col-lg-4">
                   <div class="footer-quick-links">
-                    <h2>Quick Links</h2>
-                    <div class="list-collpse">
-                      <ul class="list-quick-links">
-                        <li><a href="">About Doctor</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Videos/Media</a></li>
-                        <li><a href="">blogs</a></li>
-                        <li><a href="">Questions</a></li>
-                        <li><a href="">Contact Us</a></li>
+                    <h2
+                      data-bs-toggle="collapse"
+                      data-bs-toggle="collapse"
+                      href="#collapse-link"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls=""
+                    >
+                      Quick Links
+                    </h2>
+                    <div class="list-collapse">
+                      <ul
+                        class="list-quick-links collapse show"
+                        id="collapse-link"
+                      >
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About Doctor</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Videos/Media</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">blogs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Questions</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact Us</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="footer-services">
+                    <h2
+                      data-bs-toggle="collapse"
+                      data-bs-toggle="collapse"
+                      href="#collapse-serv"
+                      role="button"
+                      aria-expanded="true"
+                      aria-controls=""
+                    >
+                      Our Services
+                    </h2>
+                    <div class="list-collapse">
+                      <ul
+                        class="list-our-services collapse show"
+                        id="collapse-serv"
+                      >
+                        <li class="nav-item">
+                          <a class="nav-link" id="#" href="#"
+                            >Back pain And Sciatica</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="#" href="#">Biopsycosocial</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="#" href="#">Shoulder pain </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="#" href="#">Fibromyalgia </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="#" href="#">Chronic pain </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="#" href="#">Knee pain</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="#" href="#">Hip pain</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="footer-working-days">
+                    <h2>Working Days</h2>
+                    <div class="working-days">
+                      <div class="block-work d-flex gap-3">
+                        <span class="title-days">Mon-Wed</span
+                        ><span class="title-time"
+                          ><figure>
+                            <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
+                          </figure>
+                        </span>
+                      </div>
+                      <div class="block-work d-flex gap-3">
+                        <span class="title-days">Thu-Fri</span
+                        ><span class="title-time"
+                          ><figure>
+                            <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
+                          </figure>
+                        </span>
+                      </div>
+                      <div class="block-work d-flex gap-3">
+                        <span class="title-days">Saturday</span
+                        ><span class="title-time"
+                          ><figure>
+                            <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
+                          </figure>
+                        </span>
+                      </div>
+                      <div class="block-work d-flex gap-3">
+                        <span class="title-days">Sunday</span
+                        ><span class="title-time"
+                          ><figure>
+                            <i class="fa-solid fa-clock"></i> Closed
+                          </figure>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer-copyright"></div>
+      <div class="footer-copyright">Copyright © 2022 All rights reserved</div>
     </footer>
     <!-- End Footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
