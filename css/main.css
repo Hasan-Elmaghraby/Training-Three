@@ -1172,6 +1172,62 @@ button {
   }
 }
 /* End footer */
+/* Start social fixed icons */
+.fixed-social-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 111;
+}
+.fixed-social-icons .fixed-icon-masenger,
+.fixed-social-icons .fixed-icon-whatsapp {
+  position: relative;
+  color: white;
+}
+.fixed-social-icons .fixed-icon-masenger figure,
+.fixed-social-icons .fixed-icon-whatsapp figure {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.fixed-social-icons .fixed-icon-masenger figure {
+  background-color: #00b2ff;
+}
+.fixed-social-icons .fixed-icon-whatsapp figure {
+  background-color: #25d366;
+}
+.fixed-social-icons .fixed-icon-masenger::before,
+.fixed-social-icons .fixed-icon-masenger::after,
+.fixed-social-icons .fixed-icon-whatsapp::before,
+.fixed-social-icons .fixed-icon-whatsapp::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: fade_icons_social 1.5s linear infinite;
+  animation-delay: 0.5s;
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+.fixed-social-icons .fixed-icon-masenger::before,
+.fixed-social-icons .fixed-icon-masenger::after {
+  border: 1px solid #00b2ff;
+}
+.fixed-social-icons .fixed-icon-whatsapp::before,
+.fixed-social-icons .fixed-icon-whatsapp::after {
+  border: 1px solid #25d366;
+}
+/* End social fixed icons */
+
 /* Start animation */
 @keyframes zoom-in-zoom-out {
   0% {
@@ -1191,6 +1247,19 @@ button {
   }
   to {
     transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes fade_icons_social {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
   }
 }
 
