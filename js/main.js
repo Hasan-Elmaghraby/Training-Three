@@ -4,8 +4,6 @@ const navElement = document.querySelector(".nav-box");
 const magaMenu = document.createElement("div");
 document.body.append(magaMenu);
 magaMenu.classList.add("mega-menu");
-magaMenu.style.opacity = "0";
-magaMenu.style.width = "0";
 
 const closeMenu = document.querySelector(".close");
 magaMenu.append(closeMenu);
@@ -28,27 +26,25 @@ magaMenu.append(barContact);
 const overLay = document.querySelector(".overlay");
 
 navElement.addEventListener("click", function open(e) {
-  magaMenu.style.opacity = "1";
+  magaMenu.style.right = "0";
   magaMenu.style.width = "320px";
   mainNav.style.display = "flex";
   overLay.style.display = "block";
   magaMenu.style.zIndex = "11111";
-  magaMenu.style.transition = ".5s";
+  magaMenu.style.transition = ".8s";
 });
 
 closeMenu.addEventListener("click", function close() {
-  magaMenu.style.opacity = "0";
   magaMenu.style.zIndex = "-1";
-  magaMenu.style.width = "0";
+  magaMenu.style.right = "-320px";
   overLay.style.display = "none";
 });
 
 window.onclick = function (e) {
   if (e.target == overLay) {
     overLay.style.display = "none";
-    magaMenu.style.opacity = "0";
     magaMenu.style.zIndex = "-1";
-    magaMenu.style.width = "0";
+    magaMenu.style.right = "-320px";
   }
 };
 
@@ -88,16 +84,19 @@ window.addEventListener("scroll", function () {
 
 // End sticky Header
 // Start Effect Write
-var i = 0;
-var txt =
+let i = 0;
+let txt =
   "Dr. Mahmoud Alkholany is a Consultant in Pain Medicine and Anaesthesia based in the UK working between the NHS at Liverpool University Hospitals and the independent sector in Manchester and Liverpool.";
-var speed = 50;
-
+let speed = 50;
+let test = document.querySelector(".home-header-image-wrapper figure");
 function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("type-1").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+  if (!!document.getElementById("type-1")) {
+    if (i < txt.length) {
+      document.getElementById("type-1").innerHTML += txt.charAt(i);
+      i++;
+      test.style.top = i;
+      setTimeout(typeWriter, speed);
+    }
   }
 }
 typeWriter();
@@ -146,3 +145,16 @@ for (let i = 0; i < faqCards.length; i++) {
   });
 }
 // End home faq
+// Start footerLink footer
+let footerQuickLinks = document.querySelector(".footer-quick-links h2");
+let footerServices = document.querySelector(".footer-services h2");
+let listHidden = document.querySelectorAll(".list-hidden");
+
+footerQuickLinks.onclick = function () {
+  listHidden[0].classList.toggle("show-list");
+};
+footerServices.onclick = function () {
+  listHidden[1].classList.toggle("show-list");
+};
+
+// End footerLink footer

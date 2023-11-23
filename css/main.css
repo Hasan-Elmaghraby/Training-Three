@@ -136,6 +136,7 @@ button {
   height: 25px;
   background-color: white;
   border: 1px solid #c1e0e8;
+  color: #becce0;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -217,10 +218,10 @@ button {
   color: var(--text-color);
   color: white;
   transition: var(--main-transition);
+  border: 1px solid var(--main-color);
 }
 .button-appointment:hover {
   background-color: transparent;
-  border: 1px solid var(--main-color);
   color: var(--main-color);
 }
 
@@ -233,7 +234,7 @@ button {
 .nav-box {
   display: none;
   border: none;
-  font-size: 30px;
+  font-size: 28px;
   background-color: transparent;
   color: var(--main-color);
 }
@@ -284,18 +285,19 @@ button {
   }
   .logo {
     margin: 0 30px;
+    width: 120px;
   }
   .logo img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .mega-menu {
     display: block;
     height: 100%;
-    width: 0;
+    width: 320px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -320px;
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
@@ -354,6 +356,7 @@ button {
 .home-header {
   background-color: var(--background-color-section);
   position: relative;
+  overflow: hidden;
 }
 .main-button {
   background-color: #00b7eb;
@@ -391,14 +394,36 @@ button {
   line-height: 1.9;
 }
 .home-header-image-wrapper {
-  position: absolute;
   height: 100%;
+  width: 730px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.home-header-image-wrapper figure {
+  position: relative;
+  display: flex;
+  padding-bottom: 86.3%;
 }
 .home-header-image-wrapper img {
-  border-bottom-left-radius: 60%;
-  border-top-left-radius: 60%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
+
 .big-circle-shape,
 .small-circle-shape {
   background: linear-gradient(
@@ -433,6 +458,7 @@ button {
   .home-header-desc {
     text-align: center;
   }
+
   .home-header-sub-title {
     font-size: 30px;
   }
@@ -441,9 +467,15 @@ button {
   }
   .home-header-image-wrapper {
     position: inherit;
+    width: 100%;
   }
   .home-header-image-wrapper img {
     border-radius: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .home-header-desc {
+    padding-top: 25px;
   }
 }
 
@@ -577,20 +609,32 @@ button {
   font-size: 14px;
   color: var(--text-color);
 }
-.home-main-services-image-desc .read-more {
+.read-more {
+  display: flex;
+  width: -webkit-max-content;
+  width: max-content;
+  align-items: center;
   font-size: 12px;
+  font-weight: 500;
   color: #1c3b4f;
+  margin: 0 auto;
 }
-.home-main-services-image-desc .read-more svg {
-  transform: translateX(-110%);
-  visibility: hidden;
+
+.read-more figure {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: var(--main-transition);
+  transform: translateX(0px);
+  padding: 0;
+  margin: 0;
 }
-.home-main-services-image-box:hover svg {
-  transform: translateX(0);
-  visibility: visible;
+.home-main-services-image-box:hover .read-more figure {
+  opacity: 1;
   font-size: 10px;
   color: var(--main-color);
+  transform: translateX(4px);
 }
 .home-main-services-image-box:hover .read-more {
   color: var(--main-color);
@@ -605,7 +649,19 @@ button {
   top: 15%;
   right: 35px;
 }
-
+@media (max-width: 991px) {
+  .home-main-services-image-box {
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .home-main-services-image-box {
+    margin-bottom: 90px;
+  }
+  .home-main-services-image-wrapper {
+    padding-bottom: 0;
+  }
+}
 /* End Main Services */
 
 /* Start Home Testimonials */
@@ -640,7 +696,7 @@ button {
   width: 454px;
   height: 454px;
   position: relative;
-  background-image: url(/images/download.png);
+  background-image: url(../images/download.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
@@ -676,6 +732,7 @@ button {
   background-color: var(--main-color);
   padding: 60px 40px 10px 40px;
   border-radius: 60px;
+  margin-top: 48px;
 }
 .quote-left {
   font-size: 48px;
@@ -721,9 +778,10 @@ button {
   background-color: var(--main-color);
   color: #fff;
 }
+
 .testimonial-bullets-swipper {
-  top: 34%;
-  right: -15px;
+  top: 50%;
+  right: 0px;
 }
 .testimonial-bullet-swipper {
   width: 7px;
@@ -735,7 +793,7 @@ button {
   background-color: var(--main-color);
 }
 .fade-slide {
-  animation-name: fade;
+  animation-name: change-slider;
   animation-duration: 2s;
 }
 
@@ -749,6 +807,13 @@ button {
   left: 35px;
 }
 
+@media (min-width: 1200px) {
+  .testimonial-bullets-swipper {
+    top: 50%;
+    right: 70px;
+  }
+}
+
 @media (max-width: 991px) {
   .home-testimonials-images-list {
     display: none;
@@ -757,11 +822,21 @@ button {
     width: 80%;
   }
   .testimonial-bullets-swipper {
-    top: 34%;
-    right: 74px;
+    top: 50%;
+    right: 75px;
   }
   .swipper-arrow {
     margin-right: 10%;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-bullets-swipper {
+    display: none;
+  }
+
+  .testimonial-bullets-swipper {
+    top: 50%;
+    right: 38px;
   }
 }
 
@@ -855,7 +930,7 @@ button {
   color: var(--text-color);
 }
 .blog-box {
-  box-shadow: 0px 3px 6px 0px;
+  box-shadow: 3px 3px 5px 4px #ebebeb;
   border-radius: 25px;
   transition: var(--main-transition);
   padding: 10px 10px 25px 10px;
@@ -864,7 +939,7 @@ button {
 }
 
 .blog-box:hover {
-  box-shadow: 1px 3px 8px 1px;
+  box-shadow: 1px 1px 1px 2px #63bad3de;
 }
 .blog-box-image {
   overflow: hidden;
@@ -891,24 +966,17 @@ button {
   font-size: 16px;
   color: var(--text-color);
 }
-.blog-box-more {
-  font-size: 12px;
-  color: #1c3b4f;
-  font-weight: 500;
-  transition: var(--main-transition);
+.blog-box .read-more {
+  margin: 0;
 }
-.blog-box .blog-box-more svg {
-  transform: translateX(-110%);
-  visibility: hidden;
-  transition: var(--main-transition);
-}
-.blog-box:hover .blog-box-more svg {
-  transform: translateX(0);
-  visibility: visible;
+
+.blog-box:hover .read-more figure {
+  opacity: 1;
   font-size: 10px;
   color: var(--main-color);
+  transform: translateX(4px);
 }
-.blog-box:hover .blog-box-more {
+.blog-box:hover .read-more {
   color: var(--main-color);
 }
 
@@ -1015,7 +1083,7 @@ button {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-image: url(/images/Mask\ Group\ 242.png);
+  background-image: url(../images/Mask\ Group\ 242.png);
 }
 .footer-content::before {
   content: "";
@@ -1110,7 +1178,7 @@ button {
   font-size: 14px;
   margin-bottom: 11px;
   position: relative;
-  transition: 0.7s;
+  transition: 1.2s;
 }
 .footer-quick-links .list-quick-links a::before,
 .footer-services .list-our-services a::before {
@@ -1166,8 +1234,17 @@ button {
     display: flex;
     flex-direction: column;
   }
-
-  .list-collapse {
+  .footer-quick-links h2,
+  .footer-services h2 {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  .show-list {
     display: none;
   }
 }
@@ -1213,7 +1290,6 @@ button {
   bottom: -20px;
   border-radius: 50%;
   animation: fade_icons_social 1.5s linear infinite;
-  animation-delay: 0.5s;
   opacity: 0;
   transform: scale(0.1);
 }
@@ -1226,8 +1302,84 @@ button {
 .fixed-social-icons .fixed-icon-whatsapp::after {
   border: 1px solid #25d366;
 }
+.fixed-social-icons .fixed-icon-masenger::before,
+.fixed-social-icons .fixed-icon-whatsapp::before {
+  animation-delay: 0.9s;
+}
+.fixed-social-icons .fixed-icon-masenger::after,
+.fixed-social-icons .fixed-icon-whatsapp::after {
+  animation-delay: 0.5s;
+}
 /* End social fixed icons */
+/* Start Page about docotor */
+.interface-page {
+  position: relative;
+  background-image: url(../images/interface.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+}
+.interface-page::after {
+  content: "";
+  background: linear-gradient(
+    68deg,
+    rgba(0, 183, 235, 0.08) 0%,
+    rgba(0, 183, 235, 0.1) 39%,
+    rgba(0, 183, 235, 0.087272409) 67%,
+    rgba(0, 183, 235, 0) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.interface-image-content {
+  padding: 83px 0;
+  z-index: 1;
+  position: relative;
+}
+.interface-title {
+  color: #1c3b4f;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.interface-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.interface-list li a,
+.interface-list li span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1c3b4f;
+  transition: var(--main-transition);
+}
 
+.title-link {
+  position: relative;
+}
+.title-link a:hover {
+  color: var(--main-color);
+}
+.title-link::after {
+  content: url(/images/Group\ 10009.png);
+  margin: 0 10px;
+}
+
+/* End Page about docotor */
 /* Start animation */
 @keyframes zoom-in-zoom-out {
   0% {
@@ -1241,7 +1393,7 @@ button {
     transform: scale(1, 1) rotateZ(90deg);
   }
 }
-@keyframes fade {
+@keyframes change-slider {
   from {
     transform: translate3d(-100%, 0px, 0px);
   }
