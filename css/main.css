@@ -151,6 +151,9 @@ button {
   transform: scale(1.25);
   border: none;
 }
+.main-nav {
+  gap: 15px;
+}
 .main-nav li a {
   font-size: 14px;
   color: #1c3b4f;
@@ -260,6 +263,7 @@ button {
   width: 100%;
   background-color: #fff;
   animation: active-menu 0.5s;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.04);
 }
 
 @keyframes active-menu {
@@ -481,6 +485,9 @@ button {
 
 /* End Home Header */
 /* Start About Us */
+.about-us-image-wrapper img {
+  width: 100%;
+}
 .home-about-us-title {
   color: var(--main-color);
   font-weight: 600;
@@ -516,6 +523,12 @@ button {
   top: 80px;
 }
 @media (max-width: 1200px) {
+  .about-us-image-wrapper {
+    text-align: center;
+  }
+  .about-us-image-wrapper img {
+    width: 90%;
+  }
   .home-about-us-desc {
     text-align: center;
   }
@@ -1244,8 +1257,16 @@ button {
     border-radius: 5px;
     font-size: 17px;
   }
+  .footer-quick-links,
+  .footer-services,
+  .footer-working-days {
+    padding-top: 20px;
+  }
   .show-list {
     display: none;
+    min-height: 0;
+    transition: 1.2s;
+    overflow: hidden;
   }
 }
 /* End footer */

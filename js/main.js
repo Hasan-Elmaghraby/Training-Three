@@ -53,19 +53,16 @@ window.onclick = function (e) {
 const dropdownBtn = document.getElementById("button-services");
 const dropdownMenu = document.getElementById("dropdown-services");
 
-const toggleDropdown = function () {
-  dropdownMenu.classList.toggle("show");
-};
 if (!!dropdownBtn) {
-  dropdownBtn.addEventListener("click", function (e) {
+  dropdownBtn.addEventListener("mouseover", function (e) {
     e.stopPropagation();
-    toggleDropdown();
+    dropdownMenu.classList.add("show");
   });
 }
 
-document.documentElement.addEventListener("click", function () {
+document.documentElement.addEventListener("mouseout", function () {
   if (dropdownMenu.classList.contains("show")) {
-    toggleDropdown();
+    dropdownMenu.classList.remove("show");
   }
 });
 // End dropdown services
@@ -158,3 +155,12 @@ footerServices.onclick = function () {
 };
 
 // End footerLink footer
+
+let rotate = document.querySelector(".home-testimonials-images-list");
+rotate.onmouseover = function () {
+  rotate.style.animation = "rotation 10s ease-in-out ";
+};
+// rotate.onmouseout = function () {
+//   // rotate.style.animation = "rotation 10s ease-in-out ";
+//   rotate.style.backgroundColor = "green";
+// };
