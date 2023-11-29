@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -11,6 +12,14 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
     <title>Main Page</title>
   </head>
@@ -389,150 +398,155 @@
           </div>
           <div class="col-lg-6">
             <div class="home-testimonials-slider">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide fade-slide justify-content-center">
-                    <div class="testimonils-block position-relative">
-                      <figure class="quote-left position-absolute">
-                        <i class="fa-solid fa-quote-left"></i>
-                      </figure>
-                      <p class="parg">
-                        I’ve been going from lamp to post with my headache and
-                        migraine, I met Dr Alkholany and he put a plan for my
-                        management which included modifications in my
-                        medications and Botox injection along with life style
-                        modification. It was my first time to realise how much
-                        anxiety I have and how this has an impact on my pain. We
-                        worked together with help from pain psychology to
-                        address that and adopt relaxation techniques and that
-                        was a transformational moment in my long journey with
-                        headache
-                      </p>
-                      <div
-                        class="testimonial-person-footer d-flex justify-content-between"
-                      >
-                        <div class="testimonial-person d-flex gap-3">
-                          <figure>
-                            <img src="images/Ellipse 75.png" alt="" />
-                          </figure>
-                          <div class="name-role">
-                            <h4 class="name">Ahmed Ashraf</h4>
-                            <span class="role">Patient</span>
-                          </div>
-                        </div>
-                        <figure class="quote-right">
-                          <i class="fa-solid fa-quote-right"></i>
+              <swiper-container
+                style="
+                  --swiper-navigation-color: #fff;
+                  --swiper-pagination-color: #fff;
+                "
+                class="mySwiper"
+                zoom="true"
+                navigation="true"
+                pagination="true"
+                pagination-clickable="true"
+              >
+                <div class="swiper-slide">
+                  <div class="testimonils-block position-relative">
+                    <figure class="quote-left position-absolute">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </figure>
+                    <p class="parg">
+                      I’ve been going from lamp to post with my headache and
+                      migraine, I met Dr Alkholany and he put a plan for my
+                      management which included modifications in my medications
+                      and Botox injection along with life style modification. It
+                      was my first time to realise how much anxiety I have and
+                      how this has an impact on my pain. We worked together with
+                      help from pain psychology to address that and adopt
+                      relaxation techniques and that was a transformational
+                      moment in my long journey with headache
+                    </p>
+                    <div
+                      class="testimonial-person-footer d-flex justify-content-between"
+                    >
+                      <div class="testimonial-person d-flex gap-3">
+                        <figure>
+                          <img src="images/Ellipse 75.png" alt="" />
                         </figure>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide fade-slide justify-content-center">
-                    <div class="testimonils-block position-relative">
-                      <figure class="quote-left position-absolute">
-                        <i class="fa-solid fa-quote-left"></i>
-                      </figure>
-                      <p class="parg">
-                        I’ve been going from lamp to post with my headache and
-                        migraine, I met Dr Alkholany and he put a plan for my
-                        management which included modifications in my
-                        medications and Botox injection along with life style
-                        modification. It was my first time to realise how much
-                        anxiety I have and how this has an impact on my pain. We
-                        worked together with help from pain psychology to
-                        address that and adopt relaxation techniques and that
-                        was a transformational moment in my long journey with
-                        headache
-                      </p>
-                      <div
-                        class="testimonial-person-footer d-flex justify-content-between"
-                      >
-                        <div class="testimonial-person d-flex gap-3">
-                          <figure>
-                            <img src="images/Ellipse 81.png" alt="" />
-                          </figure>
-                          <div class="name-role">
-                            <h4 class="name">Mohamed Ahmed</h4>
-                            <span class="role">Patient</span>
-                          </div>
+                        <div class="name-role">
+                          <h4 class="name">Ahmed Ashraf</h4>
+                          <span class="role">Patient</span>
                         </div>
-                        <figure class="quote-right">
-                          <i class="fa-solid fa-quote-right"></i>
-                        </figure>
                       </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide fade-slide justify-content-center">
-                    <div class="testimonils-block position-relative">
-                      <figure class="quote-left position-absolute">
-                        <i class="fa-solid fa-quote-left"></i>
+                      <figure class="quote-right">
+                        <i class="fa-solid fa-quote-right"></i>
                       </figure>
-                      <p class="parg">
-                        I’ve been going from lamp to post with my headache and
-                        migraine, I met Dr Alkholany and he put a plan for my
-                        management which included modifications in my
-                        medications and Botox injection along with life style
-                        modification. It was my first time to realise how much
-                        anxiety I have and how this has an impact on my pain. We
-                        worked together with help from pain psychology to
-                        address that and adopt relaxation techniques and that
-                        was a transformational moment in my long journey with
-                        headache
-                      </p>
-                      <div
-                        class="testimonial-person-footer d-flex justify-content-between"
-                      >
-                        <div class="testimonial-person d-flex gap-3">
-                          <figure>
-                            <img src="images/Ellipse 82.png" alt="" />
-                          </figure>
-                          <div class="name-role">
-                            <h4 class="name">Ashraf Ahmed</h4>
-                            <span class="role">Patient</span>
-                          </div>
-                        </div>
-                        <figure class="quote-right">
-                          <i class="fa-solid fa-quote-right"></i>
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide fade-slide justify-content-center">
-                    <div class="testimonils-block position-relative">
-                      <figure class="quote-left position-absolute">
-                        <i class="fa-solid fa-quote-left"></i>
-                      </figure>
-                      <p class="parg">
-                        I’ve been going from lamp to post with my headache and
-                        migraine, I met Dr Alkholany and he put a plan for my
-                        management which included modifications in my
-                        medications and Botox injection along with life style
-                        modification. It was my first time to realise how much
-                        anxiety I have and how this has an impact on my pain. We
-                        worked together with help from pain psychology to
-                        address that and adopt relaxation techniques and that
-                        was a transformational moment in my long journey with
-                        headache
-                      </p>
-                      <div
-                        class="testimonial-person-footer d-flex justify-content-between"
-                      >
-                        <div class="testimonial-person d-flex gap-3">
-                          <figure>
-                            <img src="images/Ellipse 83.png" alt="" />
-                          </figure>
-                          <div class="name-role">
-                            <h4 class="name">Ziad Elkholy</h4>
-                            <span class="role">Patient</span>
-                          </div>
-                        </div>
-                        <figure class="quote-right">
-                          <i class="fa-solid fa-quote-right"></i>
-                        </figure>
-                      </div>
                     </div>
                   </div>
                 </div>
-                <div
+                <div class="swiper-slide">
+                  <div class="testimonils-block position-relative">
+                    <figure class="quote-left position-absolute">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </figure>
+                    <p class="parg">
+                      I’ve been going from lamp to post with my headache and
+                      migraine, I met Dr Alkholany and he put a plan for my
+                      management which included modifications in my medications
+                      and Botox injection along with life style modification. It
+                      was my first time to realise how much anxiety I have and
+                      how this has an impact on my pain. We worked together with
+                      help from pain psychology to address that and adopt
+                      relaxation techniques and that was a transformational
+                      moment in my long journey with headache
+                    </p>
+                    <div
+                      class="testimonial-person-footer d-flex justify-content-between"
+                    >
+                      <div class="testimonial-person d-flex gap-3">
+                        <figure>
+                          <img src="images/Ellipse 81.png" alt="" />
+                        </figure>
+                        <div class="name-role">
+                          <h4 class="name">Mohamed Ahmed</h4>
+                          <span class="role">Patient</span>
+                        </div>
+                      </div>
+                      <figure class="quote-right">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonils-block position-relative">
+                    <figure class="quote-left position-absolute">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </figure>
+                    <p class="parg">
+                      I’ve been going from lamp to post with my headache and
+                      migraine, I met Dr Alkholany and he put a plan for my
+                      management which included modifications in my medications
+                      and Botox injection along with life style modification. It
+                      was my first time to realise how much anxiety I have and
+                      how this has an impact on my pain. We worked together with
+                      help from pain psychology to address that and adopt
+                      relaxation techniques and that was a transformational
+                      moment in my long journey with headache
+                    </p>
+                    <div
+                      class="testimonial-person-footer d-flex justify-content-between"
+                    >
+                      <div class="testimonial-person d-flex gap-3">
+                        <figure>
+                          <img src="images/Ellipse 82.png" alt="" />
+                        </figure>
+                        <div class="name-role">
+                          <h4 class="name">Ashraf Ahmed</h4>
+                          <span class="role">Patient</span>
+                        </div>
+                      </div>
+                      <figure class="quote-right">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonils-block position-relative">
+                    <figure class="quote-left position-absolute">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </figure>
+                    <p class="parg">
+                      I’ve been going from lamp to post with my headache and
+                      migraine, I met Dr Alkholany and he put a plan for my
+                      management which included modifications in my medications
+                      and Botox injection along with life style modification. It
+                      was my first time to realise how much anxiety I have and
+                      how this has an impact on my pain. We worked together with
+                      help from pain psychology to address that and adopt
+                      relaxation techniques and that was a transformational
+                      moment in my long journey with headache
+                    </p>
+                    <div
+                      class="testimonial-person-footer d-flex justify-content-between"
+                    >
+                      <div class="testimonial-person d-flex gap-3">
+                        <figure>
+                          <img src="images/Ellipse 83.png" alt="" />
+                        </figure>
+                        <div class="name-role">
+                          <h4 class="name">Ziad Elkholy</h4>
+                          <span class="role">Patient</span>
+                        </div>
+                      </div>
+                      <figure class="quote-right">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </swiper-container>
+              <!-- <div
                   class="testimonial-bullets-swipper position-absolute d-flex gap-1 flex-column"
                 >
                   <span
@@ -562,8 +576,7 @@
                   <figure class="swipper-button-next" onclick="plusSlides(1)">
                     <i class="fa-solid fa-arrow-right"></i>
                   </figure>
-                </div>
-              </div>
+                </div> -->
             </div>
           </div>
         </div>
@@ -763,22 +776,16 @@
           </p>
         </div>
         <div class="home-videos-wrapper pt-4">
-          <div class="row">
-            <div class="col-lg-4">
-              <figure>
-                <img class="w-100" src="images/Back pain 2.jpg" alt="" />
-              </figure>
-            </div>
-            <div class="col-lg-4">
-              <figure>
-                <img class="w-100" src="images/Back pain 2.jpg" alt="" />
-              </figure>
-            </div>
-            <div class="col-lg-4">
-              <figure>
-                <img class="w-100" src="images/Mask Group 240.jpg" alt="" />
-              </figure>
-            </div>
+          <div id="gallery-wrap">
+            <a href="images/Fibromyalgia 3.jpg" data-fancybox="video-gallery">
+              <img src="images/Fibromyalgia 3.jpg" alt=""
+            /></a>
+            <a href="images/Fibromyalgia 3.jpg" data-fancybox="video-gallery">
+              <img src="images/Fibromyalgia 3.jpg" alt=""
+            /></a>
+            <a href="images/Fibromyalgia 3.jpg" data-fancybox="video-gallery">
+              <img src="images/Fibromyalgia 3.jpg" alt=""
+            /></a>
           </div>
         </div>
         <div type="button" class="d-flex justify-content-center">
@@ -1181,8 +1188,12 @@
         ><figure><i class="fa-brands fa-whatsapp"></i></figure
       ></a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
   </body>
 </html>

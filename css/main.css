@@ -831,8 +831,8 @@ button {
   .home-testimonials-images-list {
     display: none;
   }
-  .testimonils-block {
-    width: 80%;
+  .home-testimonials-slider {
+    margin-bottom: 40px;
   }
   .testimonial-bullets-swipper {
     top: 50%;
@@ -944,6 +944,7 @@ button {
 }
 .blog-box {
   box-shadow: 3px 3px 5px 4px #ebebeb;
+
   border-radius: 25px;
   transition: var(--main-transition);
   padding: 10px 10px 25px 10px;
@@ -952,7 +953,7 @@ button {
 }
 
 .blog-box:hover {
-  box-shadow: 1px 1px 1px 2px #63bad3de;
+  box-shadow: 3px 3px 5px 2px #63bbd369;
 }
 .blog-box-image {
   overflow: hidden;
@@ -1262,11 +1263,9 @@ button {
   .footer-working-days {
     padding-top: 20px;
   }
-  .show-list {
+  .list-our-services,
+  .list-quick-links {
     display: none;
-    min-height: 0;
-    transition: 1.2s;
-    overflow: hidden;
   }
 }
 /* End footer */
@@ -1437,3 +1436,12 @@ button {
 }
 
 /* End animation */
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 50px;
+  width: 100%;
+}

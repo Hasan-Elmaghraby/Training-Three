@@ -1,3 +1,6 @@
+Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {
+  wheel: "close",
+});
 // Start MegaMenu
 const navElement = document.querySelector(".nav-box");
 
@@ -142,25 +145,27 @@ for (let i = 0; i < faqCards.length; i++) {
   });
 }
 // End home faq
-// Start footerLink footer
-let footerQuickLinks = document.querySelector(".footer-quick-links h2");
-let footerServices = document.querySelector(".footer-services h2");
-let listHidden = document.querySelectorAll(".list-hidden");
 
-footerQuickLinks.onclick = function () {
-  listHidden[0].classList.toggle("show-list");
-};
-footerServices.onclick = function () {
-  listHidden[1].classList.toggle("show-list");
-};
+import { Swiper, SwiperSlide } from "swiper/vue";
 
-// End footerLink footer
+// Import Swiper styles
+import "swiper/css";
 
-let rotate = document.querySelector(".home-testimonials-images-list");
-rotate.onmouseover = function () {
-  rotate.style.animation = "rotation 10s ease-in-out ";
+import "swiper/css/pagination";
+
+import "./style.css";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination],
+    };
+  },
 };
-// rotate.onmouseout = function () {
-//   // rotate.style.animation = "rotation 10s ease-in-out ";
-//   rotate.style.backgroundColor = "green";
-// };
