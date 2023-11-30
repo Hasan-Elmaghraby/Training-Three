@@ -1197,24 +1197,7 @@ button {
   margin-left: 15px;
   position: relative;
 }
-.footer-slide::before,
-.footer-slide::after {
-  position: absolute;
-  content: "";
-  width: 16px;
-  height: 2px;
-  border-radius: 2px;
-  background-color: white;
-  top: 10px;
-  right: 0;
-  transition: var(--main-transition);
-}
-.footer-slide::after {
-  transform: rotate(90deg);
-}
-.footer-rotate::after {
-  transform: rotate(0deg);
-}
+
 .footer-quick-links .list-quick-links a,
 .footer-services .list-our-services a {
   color: #79a1bb;
@@ -1277,7 +1260,24 @@ button {
     display: flex;
     flex-direction: column;
   }
-
+  .footer-slide::before,
+  .footer-slide::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+    top: 10px;
+    right: 0;
+    transition: var(--main-transition);
+  }
+  .footer-slide::after {
+    transform: rotate(90deg);
+  }
+  .footer-rotate::after {
+    transform: rotate(0deg);
+  }
   .footer-working-days {
     align-items: center;
   }
