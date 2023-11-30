@@ -1,6 +1,3 @@
-Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {
-  wheel: "close",
-});
 // Start MegaMenu
 const navElement = document.querySelector(".nav-box");
 
@@ -101,71 +98,35 @@ function typeWriter() {
 }
 typeWriter();
 // End Effect Write
-
-// Start Slider
-let slideIndex = 1;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-// Thumbnail image controls
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  let slides = document.getElementsByClassName("swiper-slide");
-  let bullets = document.querySelectorAll(".testimonial-bullet-swipper");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < bullets.length; i++) {
-    bullets[i].className = bullets[i].className.replace(" active-bullets", "");
-  }
-
-  slides[slideIndex - 1].style.display = "flex";
-  bullets[slideIndex - 1].className += " active-bullets";
-}
-// End Slider
 // Start home faq
 let cordians = document.querySelectorAll(".faq-card-title");
 let faqCards = document.querySelectorAll(".faq-card");
 for (let i = 0; i < faqCards.length; i++) {
-  faqCards[i].addEventListener("click", function name(params) {
+  faqCards[i].addEventListener("click", function name() {
     cordians[i].classList.toggle("rotate-after-faq-card-title");
   });
 }
 // End home faq
 
-import { Swiper, SwiperSlide } from "swiper/vue";
+//Start Slider
+Fancybox.bind("[data-fancybox]", {});
+// End Slider
 
-// Import Swiper styles
-import "swiper/css";
+// Start footer
+let footerQuickLinks = $(".footer-quick-links h2");
+let footerServices = $(".footer-services h2");
+let listHiddenServices = $(".list-our-services");
+let listHiddenLinks = $(".list-quick-links");
 
-import "swiper/css/pagination";
+$(document).ready(function () {
+  $(footerQuickLinks).click(function () {
+    $(listHiddenLinks).slideToggle(1700);
+    $(footerQuickLinks).toggleClass("footer-rotate");
+  });
+  $(footerServices).click(function () {
+    $(listHiddenServices).slideToggle(1700);
+    $(footerServices).toggleClass("footer-rotate");
+  });
+});
 
-import "./style.css";
-
-// import required modules
-import { Pagination } from "swiper/modules";
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    return {
-      modules: [Pagination],
-    };
-  },
-};
+// End footer

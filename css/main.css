@@ -564,9 +564,6 @@ button {
   color: var(--text-color);
 }
 
-.home-main-services-image-wrapper {
-  padding-bottom: 100px;
-}
 .home-main-services-image-box {
   transition: var(--main-transition);
   display: block;
@@ -745,7 +742,7 @@ button {
   background-color: var(--main-color);
   padding: 60px 40px 10px 40px;
   border-radius: 60px;
-  margin-top: 48px;
+  margin: 48px 10px 0 10px;
 }
 .quote-left {
   font-size: 48px;
@@ -915,6 +912,19 @@ button {
   font-size: 14px;
   color: var(--text-color);
 }
+.home-videos-wrapper {
+  display: flex;
+  gap: 29px;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.home-videos-wrapper img {
+  height: 450px;
+  object-fit: cover;
+  width: 370px;
+}
+
 .home-videos .big-circle-shape {
   right: 46px;
   top: 57px;
@@ -1185,6 +1195,25 @@ button {
   font-weight: bold;
   margin-bottom: 20px;
   margin-left: 15px;
+  position: relative;
+}
+.footer-slide::before,
+.footer-slide::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+  top: 10px;
+  right: 0;
+  transition: var(--main-transition);
+}
+.footer-slide::after {
+  transform: rotate(90deg);
+}
+.footer-rotate::after {
+  transform: rotate(0deg);
 }
 .footer-quick-links .list-quick-links a,
 .footer-services .list-our-services a {
@@ -1208,6 +1237,7 @@ button {
   transform: translateX(30px);
   color: var(--main-color);
 }
+
 .footer-working-days .block-work {
   font-size: 12px;
 }
@@ -1244,12 +1274,15 @@ button {
   .footer-quick-links,
   .footer-services,
   .footer-working-days {
-    align-items: center;
     display: flex;
     flex-direction: column;
   }
-  .footer-quick-links h2,
-  .footer-services h2 {
+
+  .footer-working-days {
+    align-items: center;
+  }
+  .footer-quick-links,
+  .footer-services {
     cursor: pointer;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -1257,15 +1290,40 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 17px;
+    width: 70%;
+    margin: auto;
   }
+
   .footer-quick-links,
   .footer-services,
   .footer-working-days {
-    padding-top: 20px;
+    margin-top: 20px;
   }
   .list-our-services,
   .list-quick-links {
     display: none;
+  }
+  .footer-quick-links h2,
+  .footer-services h2 {
+    margin: 0px;
+  }
+
+  .footer-quick-links .list-quick-links li:first-child,
+  .footer-services .list-our-services li:first-child {
+    margin-top: 15px;
+  }
+  .footer-quick-links .list-quick-links li:not(:last-of-type),
+  .footer-services .list-our-services li:not(:last-of-type) {
+    border-bottom: 1px solid #00b8eb26;
+    padding-bottom: 11px;
+    padding-top: 11px;
+  }
+  .footer-quick-links .list-quick-links a,
+  .footer-services .list-our-services a {
+    margin-bottom: 0;
+  }
+  .footer-working-days {
+    padding: 0;
   }
 }
 /* End footer */
