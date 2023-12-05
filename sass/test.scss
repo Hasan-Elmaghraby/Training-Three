@@ -1,0 +1,51 @@
+@use "./variables/colors" as *;
+@use "./variables/fonts" as *;
+@use "./variables/component" as *;
+
+// Start from page About Doctor at section intervertion offered
+// Start Page About Doctor
+//Start Intervertion Offerd
+.offered-customed {
+  background-color: #f4f9fb;
+  padding: 15px;
+  border: 1px solid #caebf5;
+  border-radius: 20px;
+}
+.offered-head {
+  .offered-title {
+    font-size: 16px;
+    color: $main-color;
+
+    .home-about-us-stethoscope {
+      left: -121px;
+      z-index: 0;
+    }
+  }
+
+  .offered-subtitle {
+    font-size: 32px;
+    font-weight: 600;
+    color: $second-color;
+  }
+  p {
+    @extend %parg;
+  }
+}
+.inline-img-title h3 {
+  font-size: 18px;
+  color: $second-color;
+}
+.offered-parg {
+  @extend %parg;
+  .break-circle {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    color: #2e546c;
+    svg {
+      font-size: 7px;
+    }
+  }
+}
+//End Intervertion Offerd
+// End Page About Doctor

@@ -1,0 +1,41 @@
+.offered-head p, .offered-parg {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5F799B;
+  line-height: 1.9;
+}
+
+.offered-customed {
+  background-color: #f4f9fb;
+  padding: 15px;
+  border: 1px solid #caebf5;
+  border-radius: 20px;
+}
+
+.offered-head .offered-title {
+  font-size: 16px;
+  color: #00b7eb;
+}
+.offered-head .offered-title .home-about-us-stethoscope {
+  left: -121px;
+  z-index: 0;
+}
+.offered-head .offered-subtitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1C3B4F;
+}
+.inline-img-title h3 {
+  font-size: 18px;
+  color: #1C3B4F;
+}
+
+.offered-parg .break-circle {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  color: #2e546c;
+}
+.offered-parg .break-circle svg {
+  font-size: 7px;
+}/*# sourceMappingURL=test.css.map */

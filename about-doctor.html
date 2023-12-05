@@ -1,174 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>About Doctot</title>
-  </head>
-  <body>
-    <!-- Start Header -->
-    <div class="header" id="header">
-      <div class="toolbar">
-        <div class="container">
-          <div
-            class="wrapper d-flex align-items-center justify-content-between"
-          >
-            <div class="toolbar-contact d-flex gap-3">
-              <a href="#">
-                <i class="fa-solid fa-phone"></i>
-                <span>+44 744 568 5681</span>
-              </a>
-              <a href="#">
-                <i class="fa-solid fa-envelope"></i>
-                <span>info@drmahmoudalkholany.com</span>
-              </a>
-            </div>
-            <div class="toolbar-social-lang d-flex align-items-center gap-5">
-              <div class="dropdown change-lang">
-                <button
-                  class="btn dropdown-toggle button-change-lang"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  English
-                </button>
-                <ul class="dropdown-menu list-change-lang">
-                  <li><a class="lang-en" href="#">English</a></li>
-                  <li><a class="lang-ar" href="#">العربية</a></li>
-                </ul>
-              </div>
-              <div
-                class="toolbar-social d-flex align-items-center gap-lg-4 gap-3"
-              >
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-              </div>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="sass/test.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <title>About Doctor</title>
+</head>
+
+<body>
+  <!-- Start Header -->
+  <div class="header" id="header">
+    <div class="toolbar">
+      <div class="container">
+        <div class="wrapper d-flex align-items-center justify-content-between">
+          <div class="toolbar-contact d-flex gap-3">
+            <a href="#">
+              <i class="fa-solid fa-phone"></i>
+              <span>+44 744 568 5681</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@drmahmoudalkholany.com</span>
+            </a>
           </div>
-        </div>
-      </div>
-      <div class="sticky-header fixed-header-wraper">
-        <div class="container">
-          <div
-            class="header-nav-wraper d-flex align-items-center justify-content-between gap-3 pt-2 pb-2"
-          >
-            <a class="logo" href="#"><img src="images/Ai EN.png" alt="" /></a>
-            <ul class="nav main-nav gap-lg-4 gap-md-2">
-              <li class="nav-item">
-                <a class="nav-link" id="home" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id="about" href="about-doctor.html"
-                  >About Dr</a
-                >
-              </li>
-              <li class="nav-item button-services" id="button-services">
-                <a class="nav-link" id="services" href="services.html"
-                  >Services</a
-                >
-                <ul class="dropdown-services" id="dropdown-services">
-                  <li class="nav-item">
-                    <a class="nav-link" id="#" href="#"
-                      >Back pain And Sciatica</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="#" href="#">Biopsycosocial</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="#" href="#">Shoulder pain </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="#" href="#">Fibromyalgia </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="#" href="#">Chronic pain </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="#" href="#">Knee pain</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="#" href="#">Hip pain</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="testimonials" href="testimonials.html"
-                  >Testimonials</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="FAQ" href="faq.html">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="media" href="videos.html"
-                  >Videos/Media</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="blog" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="contact-us" href="contact-us.html"
-                  >Contact Us</a
-                >
-              </li>
-              <a href="appointment.html" class="button-appointment">
-                <i class="fa-regular fa-calendar-days"></i>
-                Appointment
-              </a>
-            </ul>
-            <button class="nav-box" id="nav-box">
-              <i class="fa-solid fa-bars nav-button"></i>
-            </button>
-            <div class="overlay"></div>
-            <button class="close">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
+          <div class="toolbar-social-lang d-flex align-items-center gap-5">
+            <div class="dropdown change-lang">
+              <button class="btn dropdown-toggle button-change-lang" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                English
+              </button>
+              <ul class="dropdown-menu list-change-lang">
+                <li><a class="lang-en" href="#">English</a></li>
+                <li><a class="lang-ar" href="#">العربية</a></li>
+              </ul>
+            </div>
+            <div class="toolbar-social d-flex align-items-center gap-lg-4 gap-3">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="interface-page">
+    <div class="sticky-header fixed-header-wraper">
       <div class="container">
-        <div class="interface-image-content">
-          <h2 class="interface-title">About Doctor</h2>
-          <ul class="interface-list">
-            <li class="title-link"><a href="index.html">Home</a></li>
-            <li class="sub-title-link"><span>About Doctor</span></li>
+        <div class="header-nav-wraper d-flex align-items-center justify-content-between gap-3 pt-2 pb-2">
+          <a class="logo" href="#"><img src="images/Ai EN.png" alt="" /></a>
+          <ul class="nav main-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="about" href="about-doctor.html">About Dr</a>
+            </li>
+            <li class="nav-item button-services" id="button-services">
+              <a class="nav-link" id="services" href="services.html">Services</a>
+              <ul class="dropdown-services" id="dropdown-services">
+                <li class="nav-item">
+                  <a class="nav-link" id="#" href="#">Back pain And Sciatica</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="#" href="#">Biopsycosocial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="#" href="#">Shoulder pain </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="#" href="#">Fibromyalgia </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="#" href="#">Chronic pain </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="#" href="#">Knee pain</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="#" href="#">Hip pain</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="testimonials" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="FAQ" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="media" href="videos.html">Videos/Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="blog" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-us" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item"></li>
+            <a href="appointment.html" class="button-appointment">
+              <i class="fa-regular fa-calendar-days"></i>
+              Appointment
+            </a>
           </ul>
+          <button class="nav-box" id="nav-box">
+            <i class="fa-solid fa-bars nav-button"></i>
+          </button>
+          <div class="overlay"></div>
+          <button class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
       </div>
     </div>
-    <!-- End Header -->
-    <!-- Start About Us -->
-    <section class="home-about-us position-relative pt-5">
-      <div class="container">
+  </div>
+  <div class="interface-page">
+    <div class="container">
+      <div class="interface-image-content">
+        <h2 class="interface-title">About Doctor</h2>
+        <ul class="interface-list">
+          <li class="title-link"><a href="index.html">Home</a></li>
+          <li class="sub-title-link"><span>About Doctor</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+  <!-- Start About Us -->
+  <section class="home-about-us position-relative pt-5 mb-lg-5">
+    <div class="container">
+      <div class="custom-container">
         <div class="about-us-row row">
           <div class="col-xl-6">
             <div class="about-us-image-wrapper">
-              <img src="images/Group 196.png" alt="" style="width: 100%" />
+              <img src="images/Group 196.png" alt="" />
             </div>
           </div>
-          <div class="col-xl-6 pb-5">
+          <div class="col-xl-6 pb-5 pt-5 overflow-hidden">
             <div class="home-about-us-desc">
               <h6 class="home-about-us-title">
-                About-us
-                <span class="home-about-us-stethoscope"
-                  ><i class="fa-solid fa-stethoscope"></i
-                ></span>
+                Biography
+                <span class="home-about-us-stethoscope"><i class="fa-solid fa-stethoscope"></i></span>
               </h6>
               <h2 class="home-about-us-sub-title pt-2 pb-2">
                 Dr Mahmoud Alkholany is a consultant in pain medicine and
@@ -178,193 +159,495 @@
                 Dr Alkholany is privileged to have gained his training and
                 experience across three different health care systems.
               </p>
-              <p class="home-about-us-parg">
-                He qualified in 2005 from a prestigious medical school in Cairo,
-                Egypt at Ain Shams University. He finished the residency program
-                in Anaesthesia, Critical care and Pain medicine and gained a
-                Master of science in Anaesthesia after which he was appointed as
-                a teaching assistant in the same University.
+            </div>
+            <div class="trip-learning">
+              <div class="block-step">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="learning-date">2005</div>
+                      </div>
+                      <div class="col-4">
+                        <figure class="break-circle">
+                          <i class="fa-solid fa-circle"></i>
+                        </figure>
+                        <figure class="break-line"></figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="trip">
+                      <h5>Ain Shams University</h5>
+                      <p>
+                        He qualified from a prestigious medical school in
+                        Cairo, Egypt at Ain Shams University. He finished the
+                        residency program in Anaesthesia, Critical care and
+                        Pain medicine and gained a Master of science in
+                        Anaesthesia after which he was appointed as a teaching
+                        assistant in the same University.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-step">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="learning-date">2013</div>
+                      </div>
+                      <div class="col-4">
+                        <figure class="break-circle">
+                          <i class="fa-solid fa-circle"></i>
+                        </figure>
+                        <figure class="break-line"></figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="trip">
+                      <h5>Moving to and working in Saudi Arabia</h5>
+                      <p>
+                        He moved to Saudi Arabia in 2011 where he worked for 2
+                        years between the independent sector and King
+                        Abdul-Aziz University in Jeddah.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-step">
+                <div class="row">
+                  <div class="col-4 overflow-hidden">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="learning-date">2013</div>
+                      </div>
+                      <div class="col-4">
+                        <figure class="break-circle">
+                          <i class="fa-solid fa-circle"></i>
+                        </figure>
+                        <figure class="break-line"></figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="trip">
+                      <h5>Moved to the and working in UK</h5>
+                      <p>
+                        He moved to Saudi Arabia in 2011 where he worked for 2
+                        years between the independent sector and King
+                        Abdul-Aziz University in Jeddah
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <span class="big-circle-shape"></span>
+    <span class="small-circle-shape"></span>
+  </section>
+  <!-- End About Us -->
+  <!-- Start Our Mission and Vision -->
+  <section class="mission-vision position-relative pt-5 mb-lg-5">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-6">
+          <div class="mission">
+            <div class="mission-desc">
+              <div class="mission-title-icon">
+                <figure><img src="images/Group 9861.png" alt=""></figure>
+                <h6 class="mission-title">Our Mission
+                  <span class="home-about-us-stethoscope"><i class="fa-solid fa-stethoscope"></i></span>
+                </h6>
+              </div>
+              <p class="mision-parg">
+                Dr Alkholany is privileged to have gained his training and
+                experience across three different health care systems.
+              </p>
+            </div>
+            <figure class="mission-image">
+              <img src="images/Mask Group 245.jpg" alt="" />
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="vision">
+            <figure class="vision-image">
+              <img src="images/Mask Group 245.png" alt="" />
+            </figure>
+            <div class="vision-desc">
+              <div class="vision-title-icon">
+                <figure><img src="images/Group 9861.png" alt=""></figure>
+                <h6 class="vision-title">Our vision
+                  <span class="home-about-us-stethoscope"><i class="fa-solid fa-stethoscope"></i></span>
+                </h6>
+              </div>
+              <p class="vision-parg">
+                Dr Alkholany is privileged to have gained his training and
+                experience across three different health care systems.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <span class="big-circle-shape"></span>
-      <span class="small-circle-shape"></span>
-    </section>
-    <!-- End About Us -->
-    <!-- Start Footer -->
-    <footer class="doc-footer position-relative">
-      <div class="footer-content">
-        <div class="container">
-          <div class="row position-relative">
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="contact-info-block">
-                    <div
-                      class="emergency-number d-flex justify-content-between"
-                    >
-                      <div class="info-number d-flex">
-                        <figure>
-                          <i class="fa-solid fa-phone"></i>
-                        </figure>
-                        <div class="details">
-                          <span class="title">Business WhatsApp</span>
-                          <span class="number">+447445685681</span>
-                        </div>
-                      </div>
-                      <a class="mail-call" href="">
-                        <figure><i class="fa-solid fa-phone"></i></figure>
-                        Send a message
-                      </a>
-                    </div>
-                    <div class="footer-about">
-                      <figure>
-                        <img src="images/Ai EN.png" alt="" />
-                      </figure>
-                      <p class="footer-parg">
-                        Book your appointment now with Dr. Mahmoud Al Kholany, a
-                        consultant in pain medicine and anesthesia. Please find
-                        us at Spire Manchester, Spire Murrayfield Wirral ,Spire
-                        Liverpool and Highfield Rochdale Hospitals.
-                      </p>
-                    </div>
+    </div>
 
-                    <div class="email-address">
-                      <a href="">
-                        <figure><i class="fa-solid fa-envelope"></i></figure>
-                        info@drmahmoudalkholany.com
-                      </a>
+  </section>
+  <!-- End Our Mission and Vision -->
+  <!-- Start Area of interest -->
+  <section class="interests position-relative  mb-lg-5">
+    <div class="container">
+      <div class="row  justify-content-between ">
+        <div class="col-lg-6">
+          <div class="interests-desc pt-5">
+            <h3 class="interest-title">Areas of interest
+              <span class="home-about-us-stethoscope"><i class="fa-solid fa-stethoscope"></i></span>
+            </h3>
+            <h5 class="interest-subtitle">His areas of interest in Pain medicine are:</h5>
+            <div class="interest-parg d-flex gap-3">
+              <div>
+                <figure class="break-circle">
+                  <i class="fa-solid fa-circle"></i>
+                </figure>
+              </div>
+              <P>Musculoskeletal pain arising from large joints (hips, knees and shoulders) and spine.</P>
+            </div>
+            <div class="interest-parg d-flex gap-3">
+              <div>
+                <figure class="break-circle">
+                  <i class="fa-solid fa-circle"></i>
+                </figure>
+              </div>
+              <P>Neuropathic pain disorders </P>
+            </div>
+            <div class="interest-parg d-flex gap-3">
+              <div>
+                <figure class="break-circle">
+                  <i class="fa-solid fa-circle"></i>
+                </figure>
+              </div>
+              <P>Fibromyalgia, CFS, ME</P>
+            </div>
+            <div class="interest-parg d-flex gap-3">
+              <div>
+                <figure class="break-circle">
+                  <i class="fa-solid fa-circle"></i>
+                </figure>
+              </div>
+              <P>Cancer pain </P>
+            </div>
+            <p class="end-interest-parg">
+              Dr Alkholany adopts a holistic approach for the management of his
+              chronic pain patients aiming at improving quality of life and regaining functionality
+              of his patients. Within that approach, he applies interventional procedures and pharmacologic
+              management as indicated hand in hand with the help of physiotherapy and pain psychology whenever
+              indicated to achieve optimum outcomes for his patients and helping them to regain the quality
+              of life they are aspiring to. He also adopts a trauma informed care to his patients whenever
+              there is an element of psychologic trauma as part of the chronic pain disorder.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <figure class="interest-image"><img src="images/Mask Group 243.jpg" alt=""></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Area of interest -->
+  <!-- Start Intervertion Offered -->
+  <section class="offered position-relative  mb-lg-5 mt-3">
+    <div class="container">
+      <div class="offered-customed">
+        <div class="offered-head">
+          <h5 class="offered-title">Interventions offered
+            <span class="home-about-us-stethoscope"><i class="fa-solid fa-stethoscope"></i></span>
+          </h5>
+          <h3 class="offered-subtitle">Wide Range of ultrasound guided and X ray guided
+            interventional procedures</h3>
+          <p>For musculoskeletal pain related to large joints (Shoulders, Hips and Knees) and Spine</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="offered-desc m-2">
+              <div class="inline-img-title d-flex gap-2">
+                <figure><img src="images/pain.png" alt=""></figure>
+                <h3> Shoulder pain </h3>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>US guided suprascapular and Axillary nerve block and Pulsed radiofrequency for shoulder pain.
+                </P>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>US guided shoulder joint hydro dilation, AC joint injection, subacromial injection for shoulder pain.
+                </P>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>X ray guided diagnostic suprascapular, Axillary and lateral pectoral nerve block and conventional RF
+                  denervation.</P>
+              </div>
+            </div>
+            <div class="offered-desc m-2">
+              <div class="inline-img-title d-flex gap-2">
+                <figure><img src="images/pain.png" alt=""></figure>
+                <h3> Knee pain </h3>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>X ray guided diagnostic knee genicular branch block and conventional RF denervation for chronic knee
+                  pain.
+                </P>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>US guided knee joint injection.
+                </P>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="offered-desc m-2">
+              <div class="inline-img-title d-flex gap-2">
+                <figure><img src="images/pain.png" alt=""></figure>
+                <h3> Hip pain </h3>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>Combined X ray/US guided diagnostic hip articular branch block and conventional RF denervation for
+                  chronic hip pain.
+                </P>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>US guided trochanteric bursa injection for greater trochanteric syndrome.
+                </P>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>US guided hip joint injection.</P>
+              </div>
+            </div>
+            <div class="offered-desc m-2">
+              <div class="inline-img-title d-flex gap-2">
+                <figure><img src="images/pain.png" alt=""></figure>
+                <h3> Neck and low back pain </h3>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>X ray guided cervical facet joint injection and conventional radiofrequency for neck pain.
+                </P>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>X ray guided lumbar diagnostic Medial branch facet joint block and conventional RF denervation for
+                  low
+                  back pain.
+                </P>
+              </div>
+              <div class="offered-parg d-flex gap-3">
+                <div>
+                  <figure class="break-circle">
+                    <i class="fa-solid fa-circle"></i>
+                  </figure>
+                </div>
+                <P>X ray guided SIJ injection for low back pain.
+                </P>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Intervertion Offerd -->
+  <!-- Start Footer -->
+  <footer class="doc-footer position-relative">
+    <div class="footer-content">
+      <div class="container">
+        <div class="row position-relative">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="contact-info-block">
+                  <div class="emergency-number d-flex justify-content-between">
+                    <div class="info-number d-flex">
+                      <figure>
+                        <i class="fa-solid fa-phone"></i>
+                      </figure>
+                      <div class="details">
+                        <span class="title">Business WhatsApp</span>
+                        <span class="number">+447445685681</span>
+                      </div>
                     </div>
+                    <a class="mail-call" href="">
+                      <figure><i class="fa-solid fa-phone"></i></figure>
+                      Send a message
+                    </a>
+                  </div>
+                  <div class="footer-about">
+                    <figure>
+                      <img src="images/Ai EN.png" alt="" />
+                    </figure>
+                    <p class="footer-parg">
+                      Book your appointment now with Dr. Mahmoud Al Kholany, a
+                      consultant in pain medicine and anesthesia. Please find
+                      us at Spire Manchester, Spire Murrayfield Wirral ,Spire
+                      Liverpool and Highfield Rochdale Hospitals.
+                    </p>
+                  </div>
+                  <div class="email-address">
+                    <a href="">
+                      <figure><i class="fa-solid fa-envelope"></i></figure>
+                      info@drmahmoudalkholany.com
+                    </a>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div class="footer-quick-links">
-                    <h2
-                      data-bs-toggle="collapse"
-                      data-bs-toggle="collapse"
-                      href="#collapse-link"
-                      role="button"
-                      aria-expanded="false"
-                      aria-controls=""
-                    >
-                      Quick Links
-                    </h2>
-                    <div class="list-collapse">
-                      <ul
-                        class="list-quick-links collapse show"
-                        id="collapse-link"
-                      >
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">About Doctor</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Videos/Media</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">blogs</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Questions</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-quick-links">
+                  <h2 class="footer-slide">Quick Links</h2>
+                  <div class="">
+                    <ul class="list-quick-links list-hidden show-list">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About Doctor</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Videos/Media</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">blogs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Questions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="footer-services">
-                    <h2
-                      data-bs-toggle="collapse"
-                      data-bs-toggle="collapse"
-                      href="#collapse-serv"
-                      role="button"
-                      aria-expanded="true"
-                      aria-controls=""
-                    >
-                      Our Services
-                    </h2>
-                    <div class="list-collapse">
-                      <ul
-                        class="list-our-services collapse show"
-                        id="collapse-serv"
-                      >
-                        <li class="nav-item">
-                          <a class="nav-link" id="#" href="#"
-                            >Back pain And Sciatica</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="#" href="#">Biopsycosocial</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="#" href="#">Shoulder pain </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="#" href="#">Fibromyalgia </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="#" href="#">Chronic pain </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="#" href="#">Knee pain</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="#" href="#">Hip pain</a>
-                        </li>
-                      </ul>
-                    </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="footer-services">
+                  <h2 class="footer-slide">Our Services</h2>
+                  <div class="list-hidden show-list">
+                    <ul class="list-our-services">
+                      <li class="nav-item">
+                        <a class="nav-link" id="#" href="#">Back pain And Sciatica</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="#" href="#">Biopsycosocial</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="#" href="#">Shoulder pain </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="#" href="#">Fibromyalgia </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="#" href="#">Chronic pain </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="#" href="#">Knee pain</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="#" href="#">Hip pain</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="footer-working-days">
-                    <h2>Working Days</h2>
-                    <div class="working-days">
-                      <div class="block-work d-flex gap-3">
-                        <span class="title-days">Mon-Wed</span
-                        ><span class="title-time"
-                          ><figure>
-                            <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
-                          </figure>
-                        </span>
-                      </div>
-                      <div class="block-work d-flex gap-3">
-                        <span class="title-days">Thu-Fri</span
-                        ><span class="title-time"
-                          ><figure>
-                            <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
-                          </figure>
-                        </span>
-                      </div>
-                      <div class="block-work d-flex gap-3">
-                        <span class="title-days">Saturday</span
-                        ><span class="title-time"
-                          ><figure>
-                            <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
-                          </figure>
-                        </span>
-                      </div>
-                      <div class="block-work d-flex gap-3">
-                        <span class="title-days">Sunday</span
-                        ><span class="title-time"
-                          ><figure>
-                            <i class="fa-solid fa-clock"></i> Closed
-                          </figure>
-                        </span>
-                      </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer-working-days">
+                  <h2>Working Days</h2>
+                  <div class="working-days">
+                    <div class="block-work d-flex gap-3">
+                      <span class="title-days">Mon-Wed</span><span class="title-time">
+                        <figure>
+                          <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
+                        </figure>
+                      </span>
+                    </div>
+                    <div class="block-work d-flex gap-3">
+                      <span class="title-days">Thu-Fri</span><span class="title-time">
+                        <figure>
+                          <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
+                        </figure>
+                      </span>
+                    </div>
+                    <div class="block-work d-flex gap-3">
+                      <span class="title-days">Saturday</span><span class="title-time">
+                        <figure>
+                          <i class="fa-solid fa-clock"></i> 09.00AM - 02.00BM
+                        </figure>
+                      </span>
+                    </div>
+                    <div class="block-work d-flex gap-3">
+                      <span class="title-days">Sunday</span><span class="title-time">
+                        <figure>
+                          <i class="fa-solid fa-clock"></i> Closed
+                        </figure>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -373,19 +656,24 @@
           </div>
         </div>
       </div>
-      <div class="footer-copyright">Copyright © 2022 All rights reserved</div>
-    </footer>
-    <!-- End Footer -->
-    <div class="fixed-social-icons">
-      <a href="" class="fixed-icon-masenger"
-        ><figure><i class="fa-brands fa-facebook-messenger"></i></figure
-      ></a>
-      <a href="" class="fixed-icon-whatsapp"
-        ><figure><i class="fa-brands fa-whatsapp"></i></figure
-      ></a>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <div class="footer-copyright">Copyright © 2022 All rights reserved</div>
+  </footer>
+  <!-- End Footer -->
+  <div class="fixed-social-icons">
+    <a href="" class="fixed-icon-masenger">
+      <figure><i class="fa-brands fa-facebook-messenger"></i></figure>
+    </a>
+    <a href="" class="fixed-icon-whatsapp">
+      <figure><i class="fa-brands fa-whatsapp"></i></figure>
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="jquery/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
