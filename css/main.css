@@ -1161,6 +1161,10 @@ button {
 /* End Home blog */
 /* Start home faq */
 
+.home-faq {
+  margin-bottom: 150px;
+}
+
 .home-faq-title {
   color: var(--main-color);
   font-size: 16px;
@@ -1258,7 +1262,6 @@ button {
 /* Start footer */
 .footer-content {
   padding-bottom: 50px;
-  margin-top: 140px;
   position: relative;
   background-repeat: no-repeat;
   background-position: top center;

@@ -1,15 +1,11 @@
-.offered-head p, .offered-parg {
-  font-size: 14px;
-  font-weight: normal;
-  color: #5F799B;
-  line-height: 1.9;
+.offered-customed, .quali-item, .affili-block, .insurers-block {
+  border: 1px solid #caebf5;
+  border-radius: 20px;
 }
 
 .offered-customed {
   background-color: #f4f9fb;
-  padding: 15px;
-  border: 1px solid #caebf5;
-  border-radius: 20px;
+  padding: 20px;
 }
 
 .offered-head .offered-title {
@@ -23,13 +19,26 @@
 .offered-head .offered-subtitle {
   font-size: 32px;
   font-weight: 600;
-  color: #1C3B4F;
+  color: #1c3b4f;
 }
-.inline-img-title h3 {
-  font-size: 18px;
-  color: #1C3B4F;
+.offered-head p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5f799b;
+  line-height: 1.9;
 }
 
+.inline-img-title h3 {
+  font-size: 18px;
+  color: #1c3b4f;
+}
+
+.offered-parg {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5f799b;
+  line-height: 1.9;
+}
 .offered-parg .break-circle {
   width: 15px;
   height: 15px;
@@ -38,4 +47,140 @@
 }
 .offered-parg .break-circle svg {
   font-size: 7px;
+}
+
+.qualifications-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1c3b4f;
+}
+.qualifications-title .home-about-us-stethoscope {
+  top: 0px;
+  left: -116px;
+}
+
+.quali-item {
+  padding: 20px;
+}
+.quali-item h3 {
+  font-size: 18px;
+  color: #1c3b4f;
+  font-weight: 300;
+}
+.quali-item p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5f799b;
+  line-height: 1.9;
+}
+
+.publications {
+  background-color: #f4f9fb;
+}
+.publications .big-circle-shape {
+  left: 94%;
+  top: 0;
+}
+.publications .another-big-circle-shape {
+  left: 10%;
+  top: 15px;
+}
+.publications .small-circle-shape {
+  left: 10px;
+  bottom: 10px;
+}
+
+.publications-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1c3b4f;
+}
+
+.new-stethoscope {
+  position: absolute;
+  left: 50%;
+}
+.new-stethoscope img {
+  z-index: -1;
+  position: absolute;
+  top: -30px;
+}
+
+.publi-desc {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 50px;
+  padding: 20px;
+  border-top-left-radius: 15px;
+}
+
+.publi-block .publi-title {
+  font-size: 16px;
+  font-weight: 300;
+  color: #1c3b4f;
+}
+.publi-block .publi-parg {
+  font-size: 15px;
+  font-style: italic;
+  color: #5f799b;
+  font-weight: normal;
+  line-height: 1.9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 7px;
+}
+.publi-block .more {
+  font-size: 12px;
+  color: #00b7eb;
+  cursor: pointer;
+}
+.publi-block .more figure {
+  font-size: 10px;
+}
+
+.publi-image img {
+  width: 100%;
+}
+
+.affiliations-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1c3b4f;
+}
+.affiliations-title .new-stethoscope {
+  left: 97px;
+  z-index: -1;
+}
+
+.affili-block {
+  padding: 20px;
+  height: 212px;
+}
+.affili-block .affili-block-title {
+  font-size: 16px;
+  color: #1c3b4f;
+}
+.affili-block img {
+  width: 100%;
+}
+
+.insurers {
+  padding-bottom: 150px;
+  background-color: #ebfafe;
+}
+
+.insurers-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1c3b4f;
+}
+
+.insurers-block {
+  padding: 20px;
+  height: 130px;
+  background-color: #fff;
+}
+.insurers-block figure {
+  margin: 0;
+}
+.insurers-block figure img {
+  width: 100%;
 }/*# sourceMappingURL=test.css.map */

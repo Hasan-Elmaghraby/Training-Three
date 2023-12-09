@@ -1,21 +1,20 @@
 @use "./variables/colors" as *;
 @use "./variables/fonts" as *;
 @use "./variables/component" as *;
+@use "./helpers/mixins" as *;
 
 // Start from page About Doctor at section intervertion offered
 // Start Page About Doctor
 //Start Intervertion Offerd
 .offered-customed {
   background-color: #f4f9fb;
-  padding: 15px;
-  border: 1px solid #caebf5;
-  border-radius: 20px;
+  padding: 20px;
+  @extend %main-border;
 }
 .offered-head {
   .offered-title {
     font-size: 16px;
     color: $main-color;
-
     .home-about-us-stethoscope {
       left: -121px;
       z-index: 0;
@@ -25,18 +24,19 @@
   .offered-subtitle {
     font-size: 32px;
     font-weight: 600;
-    color: $second-color;
+    color: $title-color;
   }
   p {
-    @extend %parg;
+    @include parg;
   }
 }
 .inline-img-title h3 {
   font-size: 18px;
-  color: $second-color;
+  color: $title-color;
 }
 .offered-parg {
-  @extend %parg;
+  @include parg;
+
   .break-circle {
     width: 15px;
     height: 15px;
@@ -48,4 +48,140 @@
   }
 }
 //End Intervertion Offerd
+
+// Start Qualifications Section
+
+.qualifications-title {
+  @include title-section;
+  .home-about-us-stethoscope {
+    top: 0px;
+    left: -116px;
+  }
+}
+.quali-item {
+  @extend %main-border;
+  padding: 20px;
+  h3 {
+    font-size: 18px;
+    color: $title-color;
+    font-weight: 300;
+  }
+  p {
+    @include parg;
+  }
+}
+
+// End Qualifications Section
+//Start Publications Section
+.publications {
+  background-color: #f4f9fb;
+  .big-circle-shape {
+    left: 94%;
+    top: 0;
+  }
+  .another-big-circle-shape {
+    left: 10%;
+    top: 15px;
+  }
+  .small-circle-shape {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+.publications-title {
+  @include title-section;
+}
+.new-stethoscope {
+  position: absolute;
+  left: 50%;
+
+  img {
+    z-index: -1;
+    position: absolute;
+    top: -30px;
+  }
+}
+
+.publi-desc {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 50px;
+  padding: 20px;
+  border-top-left-radius: 15px;
+}
+
+.publi-block {
+  .publi-title {
+    font-size: 16px;
+    font-weight: 300;
+    color: $title-color;
+  }
+  .publi-parg {
+    font-size: 15px;
+    font-style: italic;
+    color: #5f799b;
+    font-weight: normal;
+    line-height: 1.9;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 7px;
+  }
+  .more {
+    font-size: 12px;
+    color: $main-color;
+    cursor: pointer;
+    figure {
+      font-size: 10px;
+    }
+  }
+}
+.publi-image {
+  img {
+    width: 100%;
+  }
+}
+
+//End Publications Section
+//Start Affiliations Section
+
+.affiliations-title {
+  @include title-section;
+  .new-stethoscope {
+    left: 97px;
+    z-index: -1;
+  }
+}
+.affili-block {
+  @extend %main-border;
+  padding: 20px;
+  height: 212px;
+  .affili-block-title {
+    font-size: 16px;
+    color: $title-color;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+//End Affiliations Section
+//Start insurers
+.insurers {
+  padding-bottom: 150px;
+  background-color: $background-color-section;
+}
+.insurers-title {
+  @include title-section;
+}
+.insurers-block {
+  @extend %main-border;
+  padding: 20px;
+  height: 130px;
+  background-color: #fff;
+  figure {
+    margin: 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+//End insurers
 // End Page About Doctor
