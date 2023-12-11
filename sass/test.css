@@ -8,13 +8,8 @@
   padding: 20px;
 }
 
-.offered-head .offered-title {
-  font-size: 16px;
-  color: #00b7eb;
-}
-.offered-head .offered-title .home-about-us-stethoscope {
-  left: -121px;
-  z-index: 0;
+.offered-head .site-heading {
+  justify-content: start;
 }
 .offered-head .offered-subtitle {
   font-size: 32px;
@@ -49,14 +44,8 @@
   font-size: 7px;
 }
 
-.qualifications-title {
-  font-size: 26px;
-  font-weight: 600;
-  color: #1c3b4f;
-}
-.qualifications-title .home-about-us-stethoscope {
-  top: 0px;
-  left: -116px;
+.qualifications .site-heading {
+  justify-content: start;
 }
 
 .quali-item {
@@ -140,14 +129,8 @@
   width: 100%;
 }
 
-.affiliations-title {
-  font-size: 26px;
-  font-weight: 600;
-  color: #1c3b4f;
-}
-.affiliations-title .new-stethoscope {
-  left: 97px;
-  z-index: -1;
+.affiliations .site-heading {
+  justify-content: start;
 }
 
 .affili-block {
@@ -183,4 +166,53 @@
 }
 .insurers-block figure img {
   width: 100%;
+}
+
+.p-services-home-main-services {
+  background-color: #ebfafe;
+  padding: 100px;
+}
+.p-services-home-main-services .home-main-services-image-box {
+  margin-bottom: 110px;
+}
+.p-services-home-main-services .small-circle-shape {
+  top: 5px;
+  left: 30px;
+}
+
+.services-branches {
+  padding-bottom: 110px;
+  background-color: #ebfafe;
+}
+
+.other-pain-image-wrapper {
+  width: 100%;
+}
+.other-pain-image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.other-pains-desc {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.other-pains-desc .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c3b4f;
+  margin-bottom: 17px;
+}
+.other-pains-desc p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5f799b;
+  line-height: 1.9;
+}
+.other-pains-desc span {
+  font-size: 12px;
 }/*# sourceMappingURL=test.css.map */

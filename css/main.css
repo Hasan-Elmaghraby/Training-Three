@@ -3,6 +3,7 @@
   --main-color: #00b7eb;
   --background-color-section: #ebfafe;
   --text-color: #5f799b;
+  --title-color: #1C3B4F;
   --main-transition: 0.5s;
   --main-radius: 8px;
 }
@@ -31,15 +32,51 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
-
 button {
   border: none;
   background: none;
 }
 
+/* Start Component */
+.site-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.site-heading .title {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--main-color);
+  position: relative;
+  z-index: 11;
+}
+
+.site-heading .title-big {
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--title-color);
+  position: relative;
+  z-index: 11;
+}
+
+.site-heading .wrapper {
+  position: relative;
+}
+
+.site-heading .static-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* End Component */
 /* End Global Rules*/
 /* Start Header */
 .toolbar {
@@ -447,7 +484,7 @@ button {
 
 .home-header-title {
   color: var(--main-color);
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .home-header-sub-title {
@@ -565,14 +602,8 @@ button {
   z-index: 1;
 }
 
-.home-about-us-stethoscope {
-  position: relative;
-  top: 7px;
-  left: -67px;
-  font-size: 45px;
-  color: #71a7bd45;
-  z-index: -1;
-}
+
+
 
 .home-about-us-sub-title {
   font-size: 30px;
@@ -629,14 +660,7 @@ button {
   z-index: 1;
 }
 
-.home-main-services-stethoscope {
-  position: relative;
-  top: -4px;
-  left: -123px;
-  font-size: 45px;
-  color: #71a7bd45;
-  z-index: -1;
-}
+
 
 .home-main-services-sub-title {
   font-size: 30px;
@@ -745,6 +769,10 @@ button {
   color: var(--main-color);
 }
 
+.home-main-services .button-main-services {
+  margin-top: 100px;
+}
+
 .home-main-services .big-circle-shape {
   left: 65px;
   top: 57px;
@@ -758,6 +786,10 @@ button {
 @media (max-width: 991px) {
   .home-main-services-image-box {
     margin-bottom: 90px;
+  }
+
+  .home-main-services .button-main-services {
+    margin-top: 20px;
   }
 }
 
@@ -781,14 +813,6 @@ button {
   z-index: 1;
 }
 
-.home-testimonials-stethoscope {
-  position: relative;
-  top: -4px;
-  left: -123px;
-  font-size: 45px;
-  color: #71a7bd45;
-  z-index: -1;
-}
 
 .home-testimonials-sub-title {
   font-size: 30px;
@@ -879,32 +903,7 @@ button {
   right: 75px;
 }
 
-.swiper-wrapper {
-  overflow: hidden;
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
 
-.swiper-slide {
-  display: none;
-}
-
-.swipper-button-prev,
-.swipper-button-next {
-  padding: 10px 20px;
-  border: 1px solid var(--main-color);
-  color: var(--main-color);
-  font-size: 22px;
-  border-radius: 15px;
-  transition: var(--main-transition);
-}
-
-.swipper-button-prev:hover,
-.swipper-button-next:hover {
-  background-color: var(--main-color);
-  color: #fff;
-}
 
 .testimonial-bullets-swipper {
   top: 50%;
@@ -980,13 +979,12 @@ button {
   background-color: var(--main-color);
 }
 
-.home-main-other-services .home-main-services-title {
+.home-main-other-services .title {
   color: #fff;
 }
 
-.home-main-other-services .home-main-services-stethoscope {
+.home-main-other-services .site-heading .static-shape {
   color: #ffffff3d;
-  left: -182px;
 }
 
 .home-main-other-services .home-main-services-sub-title {
@@ -1030,13 +1028,6 @@ button {
   color: var(--main-color);
 }
 
-.home-videos-stethoscope {
-  color: #71a7bd45;
-  position: relative;
-  left: -266px;
-  font-size: 45px;
-}
-
 .home-videos-parg {
   font-size: 14px;
   color: var(--text-color);
@@ -1076,12 +1067,6 @@ button {
   color: var(--main-color);
 }
 
-.our-home-blog-stethoscope {
-  color: #71a7bd45;
-  position: relative;
-  left: -266px;
-  font-size: 45px;
-}
 
 .our-home-blog-parg {
   font-size: 14px;
@@ -1163,6 +1148,10 @@ button {
 
 .home-faq {
   margin-bottom: 150px;
+}
+
+.home-faq-wrapper {
+  margin-bottom: 100px;
 }
 
 .home-faq-title {
@@ -1369,13 +1358,19 @@ button {
   position: relative;
 }
 
+.footer-quick-links .list-quick-links li,
+.footer-services .list-our-services li {
+  margin-left: 20px;
+}
+
 .footer-quick-links .list-quick-links a,
 .footer-services .list-our-services a {
   color: #79a1bb;
   font-size: 14px;
-  margin-bottom: 11px;
   position: relative;
-  transition: 1.2s;
+  transition: var(--main-transition);
+  padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .footer-quick-links .list-quick-links a::before,
@@ -1390,7 +1385,7 @@ button {
 
 .footer-quick-links .list-quick-links a:hover,
 .footer-services .list-our-services a:hover {
-  transform: translateX(30px);
+  margin-left: 30px;
   color: var(--main-color);
 }
 
@@ -1504,10 +1499,6 @@ button {
     padding-top: 11px;
   }
 
-  .footer-quick-links .list-quick-links a,
-  .footer-services .list-our-services a {
-    margin-bottom: 0;
-  }
 
   .footer-working-days {
     padding: 0;
@@ -1779,11 +1770,6 @@ button {
   color: #1c3b4f;
 }
 
-.mission-title-icon .home-about-us-stethoscope,
-.vision-title-icon .home-about-us-stethoscope {
-  left: -124px;
-  font-size: 45px;
-}
 
 .vision-image img,
 .mission-image img {
@@ -1831,11 +1817,7 @@ button {
     border-radius: 15px;
   }
 
-  .mission-title-icon .home-about-us-stethoscope,
-  .vision-title-icon .home-about-us-stethoscope {
-    left: -75px;
-    font-size: 33px;
-  }
+
 }
 
 /* End Our mission and Our vision */
@@ -1844,24 +1826,28 @@ button {
   background-color: #1c3b4f;
 }
 
+.interest-wrapper {
+  display: flex;
+  padding-left: calc(((100vw - 1200px) + 30px) / 2);
 
+}
+
+.interests-desc {
+  padding-right: 15px;
+}
 
 .interests-desc p {
   font-size: 14px;
   color: var(--text-color);
   line-height: 1.9;
+  margin: 0;
 }
 
-.interest-title {
+.interests-desc .site-heading .title-big {
   color: var(--main-color);
-  font-size: 26px;
 }
 
-.interest-title .home-about-us-stethoscope {
 
-  left: -136px;
-  z-index: 0;
-}
 
 .interest-subtitle {
   color: #fff;
@@ -1881,27 +1867,30 @@ button {
 
 .interest-image {
   margin: 0;
-  margin-right: -15px;
-  height: 640px;
+  width: 650px;
+  height: 100%;
 }
 
 
 .interest-image img {
   max-width: 100%;
   max-height: 100%;
-  height: 640px;
-  width: 683px;
-
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-@media (max-width:991px) {
-  .interest-image {
-    margin-left: -15px;
+@media (max-width:1200px) {
+  .interests-desc {
+    padding-left: 15px
   }
 
-  .interest-image img {
+  .interest-wrapper {
+    flex-direction: column;
+  }
+
+  .interest-image {
     width: 100%;
-    height: 100%;
   }
 }
 
