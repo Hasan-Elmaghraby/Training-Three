@@ -3,6 +3,21 @@
 @use "./variables/component" as *;
 @use "./helpers/mixins" as *;
 
+//Start component
+.block-more {
+  .title-more {
+    color: $title-color;
+    font-size: 12px;
+  }
+}
+.image-more {
+  margin-inline-start: 5px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: 0.7s;
+  color: $main-color;
+}
+//End component
 // Start from page About Doctor at section intervertion offered
 // Start Page About Doctor
 //Start Intervertion Offerd
@@ -141,6 +156,7 @@
   }
 }
 .affili-block {
+  cursor: pointer;
   @extend %main-border;
   padding: 20px;
   height: 212px;
@@ -159,10 +175,38 @@
   padding-bottom: 150px;
   background-color: $background-color-section;
 }
+.insurers,
+.affiliations {
+  .swiper-pagination {
+    top: 90% !important;
+    left: 40% !important;
+    flex-direction: column !important;
+    width: auto !important;
+    gap: 10px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    height: 10px !important;
+    width: 35px !important;
+    border-radius: 20px !important;
+    background-color: #bae3ef !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    height: 12px !important;
+    background-color: $main-color !important;
+  }
+  .swiper {
+    padding-bottom: 50px;
+  }
+}
+
 .insurers-title {
   @include title-section;
 }
 .insurers-block {
+  cursor: pointer;
   @extend %main-border;
   padding: 20px;
   height: 130px;
@@ -195,32 +239,165 @@
 .services-branches {
   padding-bottom: 110px;
   background-color: $background-color-section;
-}
-
-.other-pain-image-wrapper {
-  width: 100%;
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  @include widthScreen(medium) {
+    padding: 0 50px;
   }
 }
-.other-pains-desc {
+.shoulder-pain-wrapper .row {
+  @include widthScreen(medium) {
+    flex-direction: column-reverse;
+  }
+}
+.other-services {
+  @include widthScreen(medium) {
+    padding-bottom: 130px;
+  }
+}
+.other-pain-image-wrapper {
+  flex-shrink: 0;
+  width: 140px;
+  padding: 0;
+  height: 115px;
+  border-radius: 10px;
+  margin: 0;
+  overflow: hidden;
+
+  img {
+    @include image-format;
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+}
+.block-other-pains {
+  display: flex;
+  align-items: center;
   background-color: #fff;
   border-radius: 20px;
+  gap: 10px;
+  &:hover {
+    .image-more {
+      opacity: 1;
+      transform: unset !important;
+    }
+    .title-more {
+      color: $main-color;
+    }
+    .other-pain-image-wrapper img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.other-pains-desc {
   .title {
     font-size: 18px;
     font-weight: 600;
     color: $title-color;
-    margin-bottom: 17px;
+    margin: 0;
   }
   p {
     @include parg;
-  }
-  span {
-    font-size: 12px;
+    margin: 0;
   }
 }
+.single-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  .single-image-wrapper {
+    margin-bottom: 23px;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      @include image-format;
+    }
+  }
+  .single-title {
+    @include title-section;
+  }
+  .single-page-content ul * {
+    @include parg;
+  }
+}
+
 //End page shoulder pain
+// Start page vidoes/media
+.main-page-video {
+  background-color: $background-color-section;
+  padding-bottom: 140px;
+  .main-videos {
+    .subtitle {
+      @include title-section;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+  .small-circle-shape {
+    left: 31px;
+    bottom: 304px;
+  }
+  .another-small-circle-shape {
+    left: 107px;
+    bottom: 230px;
+  }
+  .big-circle-shape {
+    left: -43px;
+  }
+}
+.block-video {
+  position: relative;
+  ::before {
+    position: absolute;
+    content: "";
+    background-color: rgb(0 183 235 / 30%);
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+  }
+  ::after {
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    content: "\f144";
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: #75959c4a;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+  }
+  :hover {
+    &::before {
+      background-color: inherit;
+    }
+    &::after {
+      background-color: $main-color;
+    }
+  }
+  overflow: hidden;
+  img {
+    @include image-format;
+  }
+}
+// End page vidoes/media
+.blog-page {
+  padding-bottom: 100px;
+  .small-circle-shape {
+    left: 74px;
+    top: 32px;
+  }
+
+  .big-circle-shape {
+    left: -43px;
+    top: 95%;
+  }
+}
+//Start Blog page
+//End Blog page

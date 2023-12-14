@@ -1,4 +1,5 @@
 @mixin title-section {
+  text-transform: capitalize;
   font-size: 26px;
   font-weight: 600;
   color: #1c3b4f;
@@ -8,6 +9,13 @@
   font-weight: normal;
   color: #5f799b;
   line-height: 1.9;
+}
+@mixin image-format {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @mixin widthScreen($point) {

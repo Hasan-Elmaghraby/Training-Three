@@ -130,3 +130,56 @@ $(document).ready(function () {
 });
 
 // End footer
+var swiper = new Swiper(".testimonials-swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".affili-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+var swiper = new Swiper(".insurers-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+});
