@@ -387,6 +387,7 @@
   }
 }
 // End page vidoes/media
+//Start Blog page
 .blog-page {
   padding-bottom: 100px;
   .small-circle-shape {
@@ -399,5 +400,135 @@
     top: 95%;
   }
 }
-//Start Blog page
 //End Blog page
+//Start Other Blog page
+.blogs-branches {
+  background-color: $background-color-section;
+  padding-bottom: 100px;
+}
+.other-blogs {
+  @include widthScreen(medium) {
+    width: 70%;
+    margin: auto;
+  }
+  @include widthScreen(mobile) {
+    width: 100%;
+  }
+  .other-blogs-wrapper {
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 25px;
+  }
+}
+
+.single-blog {
+  margin: 15px 0;
+  padding: 10px 50px 10px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $main-color;
+    border-radius: 10px;
+  }
+  p,
+  figure {
+    margin: 0;
+  }
+  p {
+    position: relative;
+    @include parg;
+    padding: 10px;
+    border-right: 1px solid #eee;
+    &::after {
+      position: absolute;
+      font-family: "Font Awesome 6 Free";
+      content: "\f0da";
+      font-weight: 900;
+      font-size: 30px;
+      color: #e6e6e6;
+      right: -35px;
+      top: -5px;
+    }
+  }
+
+  &:hover {
+    p {
+      color: #fff;
+    }
+  }
+  figure {
+    font-size: 30px;
+    svg {
+      color: #e6e6e6;
+    }
+  }
+}
+.blogs-branches-wrapper {
+  .row {
+    @include widthScreen(medium) {
+      flex-direction: column-reverse;
+    }
+    .blog-box {
+      .row {
+        @include widthScreen(medium) {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+  .blog-box {
+    padding: 10px;
+    .secondary-image {
+      img {
+        @include image-format;
+      }
+    }
+    .image-desc {
+      .italic-parg {
+        font-family: "Segoe UI";
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        color: $title-color;
+      }
+    }
+    .secondary-parg {
+      @include parg;
+    }
+    .social-card {
+      border-top: 1px solid #e2dede;
+      padding-top: 10px;
+      .number-seen {
+        @include parg;
+        border-right: 1px solid#E2DEDE;
+        .icon-eye {
+          color: $main-color;
+        }
+      }
+      .social-share {
+        .title {
+          @include parg;
+          font-size: 12px;
+        }
+        .icons {
+          font-size: 20px;
+
+          .facebook-icon {
+            color: #1877f2;
+            cursor: pointer;
+          }
+          .twitter-icon {
+            color: #3cddf4;
+            cursor: pointer;
+          }
+          .google-icon {
+            color: #ff5f81;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+//End Other Blog page
