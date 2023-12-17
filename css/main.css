@@ -1275,6 +1275,16 @@ button {
   border-radius: 50%;
 }
 
+.emergency-number .details {
+  margin-left: 10px;
+
+}
+
+.emergency-number .info-number figure {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
 .footer-parg {
   font-size: 14px;
   color: var(--text-color);
@@ -1381,10 +1391,12 @@ button {
 }
 
 @media (max-width: 991px) {
+
   .contact-info-block {
     margin-left: 15%;
     margin-right: 15%;
   }
+
 
   .footer-quick-links,
   .footer-services,
@@ -1474,6 +1486,16 @@ button {
   .footer-quick-links,
   .footer-services {
     width: 100%;
+  }
+}
+
+@media (max-width:450px) {
+  .emergency-number {
+    flex-direction: column;
+  }
+
+  .email-address a {
+    font-size: 10px;
   }
 }
 

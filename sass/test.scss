@@ -532,3 +532,104 @@
 }
 
 //End Other Blog page
+
+//Start Contact Page
+.main-contact {
+  padding-bottom: 100px;
+  background-color: $background-color-section;
+}
+.main-contact-wrapper {
+  .location-desc {
+    @include widthScreen(medium) {
+      text-align: center;
+    }
+    .site-heading {
+      justify-content: left;
+      @include widthScreen(medium) {
+        justify-content: center;
+      }
+    }
+    .subtitle {
+      @include title-section;
+      font-size: 36px;
+    }
+  }
+  .contact-info-block {
+    margin: 0;
+    input[type="tel"],
+    textarea {
+      padding: 10px;
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid #cde4eb;
+      outline: none;
+      transition: 0.3s;
+      resize: none;
+      &::placeholder {
+        @include parg;
+      }
+      &:focus {
+        border-color: $main-color;
+        caret-color: $main-color;
+      }
+    }
+    .contact-card {
+      padding: 9px;
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid #cde4eb;
+      .card-title,
+      .after-card-title {
+        @include parg;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "\f078";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          top: 0;
+          right: 0;
+          transition: var(--main-transition);
+        }
+      }
+    }
+  }
+  input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #cde4eb;
+    outline: none;
+    background-color: $main-color;
+    color: #fff;
+  }
+}
+
+.card-drop {
+  @extend %main-border;
+  border-top: none;
+  .dropdown-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    & li a {
+      padding: 10px;
+      border-radius: 10px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.rotate-after-card-title::after {
+  transform: rotate(180deg);
+}
+.parg {
+  @include parg;
+}
+
+//End Contact Page

@@ -107,7 +107,14 @@ for (let i = 0; i < faqCards.length; i++) {
   });
 }
 // End home faq
-
+// Start testimonils
+var swiper = new Swiper(".testimonials-swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+// End testimonils
 //Start Slider
 Fancybox.bind("[data-fancybox]", {});
 // End Slider
@@ -120,22 +127,16 @@ let listHiddenLinks = $(".list-quick-links");
 
 $(document).ready(function () {
   $(footerQuickLinks).click(function () {
-    $(listHiddenLinks).slideToggle(1700);
+    $(listHiddenLinks).slideToggle(700);
     $(footerQuickLinks).toggleClass("footer-rotate");
   });
   $(footerServices).click(function () {
-    $(listHiddenServices).slideToggle(1700);
+    $(listHiddenServices).slideToggle(700);
     $(footerServices).toggleClass("footer-rotate");
   });
 });
 
 // End footer
-var swiper = new Swiper(".testimonials-swiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
 
 var swiper = new Swiper(".affili-swiper", {
   slidesPerView: 3,
@@ -183,3 +184,13 @@ var swiper = new Swiper(".insurers-swiper", {
     },
   },
 });
+
+// Start page contact
+// Rotate chevron at page contact
+let cardTitle = document.querySelectorAll(".card-title");
+for (let i = 0; i < cardTitle.length; i++) {
+  cardTitle[i].addEventListener("click", function name() {
+    cardTitle[i].classList.toggle("rotate-after-card-title");
+  });
+}
+// End page contact

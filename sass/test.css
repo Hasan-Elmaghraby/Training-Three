@@ -1,4 +1,4 @@
-.offered-customed, .quali-item, .affili-block, .insurers-block {
+.offered-customed, .quali-item, .affili-block, .insurers-block, .card-drop {
   border: 1px solid #caebf5;
   border-radius: 20px;
 }
@@ -544,4 +544,124 @@
 .blogs-branches-wrapper .blog-box .social-card .social-share .icons .google-icon {
   color: #ff5f81;
   cursor: pointer;
+}
+
+.main-contact {
+  padding-bottom: 100px;
+  background-color: #ebfafe;
+}
+
+@media (max-width: 991px) {
+  .main-contact-wrapper .location-desc {
+    text-align: center;
+  }
+}
+.main-contact-wrapper .location-desc .site-heading {
+  justify-content: left;
+}
+@media (max-width: 991px) {
+  .main-contact-wrapper .location-desc .site-heading {
+    justify-content: center;
+  }
+}
+.main-contact-wrapper .location-desc .subtitle {
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 600;
+  color: #1c3b4f;
+  font-size: 36px;
+}
+.main-contact-wrapper .contact-info-block {
+  margin: 0;
+}
+.main-contact-wrapper .contact-info-block input[type=tel],
+.main-contact-wrapper .contact-info-block textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #cde4eb;
+  outline: none;
+  transition: 0.3s;
+  resize: none;
+}
+.main-contact-wrapper .contact-info-block input[type=tel]::-moz-placeholder, .main-contact-wrapper .contact-info-block textarea::-moz-placeholder {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5f799b;
+  line-height: 1.9;
+}
+.main-contact-wrapper .contact-info-block input[type=tel]::placeholder,
+.main-contact-wrapper .contact-info-block textarea::placeholder {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5f799b;
+  line-height: 1.9;
+}
+.main-contact-wrapper .contact-info-block input[type=tel]:focus,
+.main-contact-wrapper .contact-info-block textarea:focus {
+  border-color: #00b7eb;
+  caret-color: #00b7eb;
+}
+.main-contact-wrapper .contact-info-block .contact-card {
+  padding: 9px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #cde4eb;
+}
+.main-contact-wrapper .contact-info-block .contact-card .card-title,
+.main-contact-wrapper .contact-info-block .contact-card .after-card-title {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5f799b;
+  line-height: 1.9;
+  position: relative;
+}
+.main-contact-wrapper .contact-info-block .contact-card .card-title::after,
+.main-contact-wrapper .contact-info-block .contact-card .after-card-title::after {
+  position: absolute;
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  top: 0;
+  right: 0;
+  transition: var(--main-transition);
+}
+.main-contact-wrapper input[type=submit] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #cde4eb;
+  outline: none;
+  background-color: #00b7eb;
+  color: #fff;
+}
+
+.card-drop {
+  border-top: none;
+}
+.card-drop .dropdown-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+.card-drop .dropdown-contact li a {
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.card-drop .dropdown-contact li a:hover {
+  background-color: #00b7eb;
+  color: #fff;
+}
+
+.rotate-after-card-title::after {
+  transform: rotate(180deg);
+}
+
+.parg {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5f799b;
+  line-height: 1.9;
 }/*# sourceMappingURL=test.css.map */
