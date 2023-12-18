@@ -449,6 +449,8 @@ button {
   }
 }
 
+
+
 /* Start Home Header */
 .home-header {
   background-color: var(--background-color-section);
@@ -589,6 +591,12 @@ button {
   }
 }
 
+@media (max-width:450px) {
+  .home-header-sub-title {
+    font-size: 20px;
+  }
+}
+
 /* End Home Header */
 /* Start About Us */
 .about-us-image-wrapper img {
@@ -644,6 +652,22 @@ button {
 @media (max-width: 767px) {
   .home-about-us-sub-title {
     font-size: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  .site-heading {
+    margin-top: 20px;
+  }
+
+  .home-about-us .big-circle-shape {
+    top: 87%;
+    right: -14px;
+  }
+
+  .home-about-us .small-circle-shape {
+    left: 22px;
+    top: 33px;
   }
 }
 
@@ -803,6 +827,19 @@ button {
   }
 }
 
+@media (max-width:450px) {
+
+  .home-main-services .big-circle-shape {
+    left: -26px;
+    top: 16px;
+  }
+
+  .home-main-services .small-circle-shape {
+    top: 88%;
+    right: 0;
+  }
+}
+
 /* End Main Services */
 
 /* Start Home Testimonials */
@@ -932,6 +969,48 @@ button {
   }
 }
 
+@media (max-width:450px) {
+  .testimonils-block {
+    padding: 46px 38px 10px 39px;
+    margin: 8px 10px 0 10px;
+    height: 270px;
+  }
+
+  .quote-left {
+    font-size: 27px;
+    top: -26px;
+    left: 75px;
+    padding: 7px 20px;
+
+  }
+
+  .testimonils-block .parg {
+    margin: 0;
+    font-size: 8px;
+  }
+
+  .testimonial-person {
+    font-size: 10px;
+  }
+
+  .testimonils-block .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 30px !important;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 30px !important;
+  }
+
+  .quote-right {
+    font-size: 30px;
+  }
+
+  .name-role .name {
+    font-size: 12px;
+  }
+}
 
 /* End Home Testimonials */
 /* Start Other Services */
@@ -1651,7 +1730,7 @@ button {
 }
 
 .title-link::after {
-  content: url(/images/Group\ 10009.png);
+  content: url(../images/Group\ 10009.png);
   margin: 0 10px;
 }
 
