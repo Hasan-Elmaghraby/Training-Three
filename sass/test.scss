@@ -35,6 +35,9 @@
     font-size: 32px;
     font-weight: 600;
     color: $title-color;
+    @include widthScreen(mobile) {
+      font-size: 26px;
+    }
   }
   p {
     @include parg;
@@ -179,22 +182,22 @@
 .affiliations {
   .swiper-pagination {
     top: 90% !important;
-    left: 40% !important;
+    left: 50% !important;
     flex-direction: column !important;
     width: auto !important;
     gap: 10px;
   }
 
   .swiper-pagination .swiper-pagination-bullet {
-    height: 10px !important;
-    width: 35px !important;
+    height: 8px !important;
+    width: 30px !important;
     border-radius: 20px !important;
     background-color: #bae3ef !important;
     opacity: 1 !important;
   }
 
   .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    height: 12px !important;
+    height: 10px !important;
     background-color: $main-color !important;
   }
   .swiper {
@@ -225,7 +228,7 @@
 
 .p-services-home-main-services {
   background-color: $background-color-section;
-  padding: 100px;
+  padding-bottom: 100px;
   .home-main-services-image-box {
     margin-bottom: 110px;
   }
@@ -241,6 +244,9 @@
   background-color: $background-color-section;
   @include widthScreen(medium) {
     padding: 0 50px;
+  }
+  @include widthScreen(small) {
+    padding: 0;
   }
 }
 .shoulder-pain-wrapper .row {
@@ -294,10 +300,17 @@
     font-weight: 600;
     color: $title-color;
     margin: 0;
+    @include widthScreen(mobile) {
+      font-size: 14px;
+    }
   }
   p {
     @include parg;
     margin: 0;
+    @include widthScreen(mobile) {
+      font-size: 12px;
+      line-height: normal;
+    }
   }
 }
 .single-content {
@@ -393,11 +406,17 @@
   .small-circle-shape {
     left: 74px;
     top: 32px;
+    @include widthScreen(mobile) {
+      left: 25px;
+    }
   }
 
   .big-circle-shape {
     left: -43px;
     top: 95%;
+    @include widthScreen(mobile) {
+      top: 97%;
+    }
   }
 }
 //End Blog page
@@ -422,8 +441,8 @@
 }
 
 .single-blog {
-  margin: 15px 0;
-  padding: 10px 50px 10px 10px;
+  margin: 0;
+  padding: 7px 50px 7px 10px;
   transition: 0.3s;
   cursor: pointer;
   &:hover {
@@ -552,6 +571,9 @@
     .subtitle {
       @include title-section;
       font-size: 36px;
+      @include widthScreen(mobile) {
+        font-size: 26spx;
+      }
     }
   }
   .contact-info-block {

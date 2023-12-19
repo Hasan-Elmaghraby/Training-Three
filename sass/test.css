@@ -29,6 +29,11 @@
   font-weight: 600;
   color: #1c3b4f;
 }
+@media (max-width: 450px) {
+  .offered-head .offered-subtitle {
+    font-size: 26px;
+  }
+}
 .offered-head p {
   font-size: 14px;
   font-weight: normal;
@@ -168,22 +173,22 @@
 .insurers .swiper-pagination,
 .affiliations .swiper-pagination {
   top: 90% !important;
-  left: 40% !important;
+  left: 50% !important;
   flex-direction: column !important;
   width: auto !important;
   gap: 10px;
 }
 .insurers .swiper-pagination .swiper-pagination-bullet,
 .affiliations .swiper-pagination .swiper-pagination-bullet {
-  height: 10px !important;
-  width: 35px !important;
+  height: 8px !important;
+  width: 30px !important;
   border-radius: 20px !important;
   background-color: #bae3ef !important;
   opacity: 1 !important;
 }
 .insurers .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
 .affiliations .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  height: 12px !important;
+  height: 10px !important;
   background-color: #00b7eb !important;
 }
 .insurers .swiper,
@@ -213,7 +218,7 @@
 
 .p-services-home-main-services {
   background-color: #ebfafe;
-  padding: 100px;
+  padding-bottom: 100px;
 }
 .p-services-home-main-services .home-main-services-image-box {
   margin-bottom: 110px;
@@ -230,6 +235,11 @@
 @media (max-width: 991px) {
   .services-branches {
     padding: 0 50px;
+  }
+}
+@media (max-width: 767px) {
+  .services-branches {
+    padding: 0;
   }
 }
 
@@ -289,12 +299,23 @@
   color: #1c3b4f;
   margin: 0;
 }
+@media (max-width: 450px) {
+  .other-pains-desc .title {
+    font-size: 14px;
+  }
+}
 .other-pains-desc p {
   font-size: 14px;
   font-weight: normal;
   color: #5f799b;
   line-height: 1.9;
   margin: 0;
+}
+@media (max-width: 450px) {
+  .other-pains-desc p {
+    font-size: 12px;
+    line-height: normal;
+  }
 }
 
 .single-content {
@@ -405,9 +426,19 @@
   left: 74px;
   top: 32px;
 }
+@media (max-width: 450px) {
+  .blog-page .small-circle-shape {
+    left: 25px;
+  }
+}
 .blog-page .big-circle-shape {
   left: -43px;
   top: 95%;
+}
+@media (max-width: 450px) {
+  .blog-page .big-circle-shape {
+    top: 97%;
+  }
 }
 
 .blogs-branches {
@@ -433,8 +464,8 @@
 }
 
 .single-blog {
-  margin: 15px 0;
-  padding: 10px 50px 10px 10px;
+  margin: 0;
+  padding: 7px 50px 7px 10px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -570,6 +601,11 @@
   font-weight: 600;
   color: #1c3b4f;
   font-size: 36px;
+}
+@media (max-width: 450px) {
+  .main-contact-wrapper .location-desc .subtitle {
+    font-size: 26spx;
+  }
 }
 .main-contact-wrapper .contact-info-block {
   margin: 0;

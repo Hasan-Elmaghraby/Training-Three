@@ -1073,18 +1073,42 @@ button {
 }
 
 .home-videos-wrapper {
-  display: flex;
-  gap: 29px;
-  justify-content: center;
-  overflow: hidden;
   margin-bottom: 50px;
 }
 
 .home-videos-wrapper img {
   height: 450px;
   object-fit: cover;
-  width: 370px;
+  width: 100%;
 }
+
+.home-videos-wrapper .swiper-slide {
+  position: relative;
+}
+
+.home-videos-wrapper .swiper-slide::after {
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  content: "\f144";
+  top: 50%;
+  left: 50%;
+  font-size: 35px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(117, 149, 156, 0.2901960784);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+
+.home-videos-wrapper .swiper-slide:hover::after {
+  background-color: #00b7eb;
+}
+
 
 .home-videos .big-circle-shape {
   right: 46px;
@@ -1105,7 +1129,6 @@ button {
 .our-home-blog-title {
   color: var(--main-color);
 }
-
 
 .our-home-blog-parg {
   font-size: 14px;
@@ -1180,6 +1203,12 @@ button {
 .our-home-blog .small-circle-shape {
   top: 15%;
   right: 35px;
+}
+
+@media (max-width:450px) {
+  .blog-box-title {
+    font-size: 16px;
+  }
 }
 
 /* End Home blog */
@@ -1734,6 +1763,16 @@ button {
   margin: 0 10px;
 }
 
+@media (max-width:450px) {
+  .interface-image-content {
+    padding: 40px 0;
+  }
+
+  .interface-title {
+    font-size: 30px;
+  }
+}
+
 /* End interface omage */
 
 /* Start home about us */
@@ -1779,7 +1818,7 @@ button {
 
 .break-line {
   background: #cdcdcd;
-  height: 1000%;
+  height: 10000%;
   width: 1px;
   position: relative;
   left: 9px;
@@ -1796,6 +1835,12 @@ button {
   font-size: 14px;
   color: var(--text-color);
   line-height: 1.9;
+}
+
+@media (max-width:450px) {
+  .learning-date {
+    width: 70px;
+  }
 }
 
 /* End home about us */

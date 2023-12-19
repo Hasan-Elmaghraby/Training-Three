@@ -138,6 +138,7 @@ $(document).ready(function () {
 
 // End footer
 
+// Start page About Doctor
 var swiper = new Swiper(".affili-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -145,6 +146,8 @@ var swiper = new Swiper(".affili-swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 2,
   },
   breakpoints: {
     320: {
@@ -168,6 +171,8 @@ var swiper = new Swiper(".insurers-swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 2,
   },
   breakpoints: {
     320: {
@@ -184,6 +189,7 @@ var swiper = new Swiper(".insurers-swiper", {
     },
   },
 });
+// End page About Doctor
 
 // Start page contact
 // Rotate chevron at page contact
@@ -194,3 +200,26 @@ for (let i = 0; i < cardTitle.length; i++) {
   });
 }
 // End page contact
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
